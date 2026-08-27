@@ -2,6 +2,7 @@
   {
     "key": "crypte-kardorim",
     "name": "Crypte de Kardorim",
+    "level": 10,
     "bossKey": "kardorim",
     "bossName": "Kardorim",
     "source": "DofusPourLesNoobs — Crypte de Kardorim",
