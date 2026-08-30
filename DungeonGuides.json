@@ -189,6 +189,101 @@
     ]
   },
   {
+    "key": "chateau-ensable",
+    "name": "Château Ensablé",
+    "level": 20,
+    "source": "DofusPourLesNoobs — Château Ensablé",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Mob l'Éponge peut désenvoûter en zone, retirer de la portée et se soigner.",
+      "Les monstres des Calanques jouent beaucoup sur les bonus/malus élémentaires et le placement."
+    ],
+    "globalMechanics": [
+      "Le combat ne repose pas sur une invulnérabilité dans sa version normale."
+    ],
+    "boss": {
+      "key": "mob-l-eponge",
+      "name": "Mob l'Éponge",
+      "quickSummary": [
+        "Désenvoûtement de zone.",
+        "Retrait de portée.",
+        "Soin de zone."
+      ],
+      "mechanics": [
+        "Le boss peut enlever les envoûtements des personnages proches et se maintenir en vie grâce à son soin."
+      ],
+      "importantSpells": [
+        {
+          "name": "Rinçage",
+          "description": "Retire les envoûtements des ennemis dans un cercle de rayon 2 autour du boss."
+        },
+        {
+          "name": "Dégraissage",
+          "description": "Attaque eau en longue ligne et retire de la portée pour 1 tour."
+        },
+        {
+          "name": "Régénération Spontanée",
+          "description": "Soigne en zone autour du boss."
+        }
+      ],
+      "dangers": [],
+      "zones": [
+        {
+          "sourceName": "Mob l'Éponge",
+          "name": "Dégraissage",
+          "area": "Ligne partant du corps-à-corps jusqu'à longue portée.",
+          "trigger": "Le boss utilise Dégraissage.",
+          "effect": "Dégâts eau et retrait de portée.",
+          "avoid": "Éviter les alignements prolongés."
+        }
+      ],
+      "strategy": [
+        "Le focus rapide limite ses soins.",
+        "Éviter de regrouper les personnages près de lui si les envoûtements sont importants."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Pichons des Calanques",
+        "role": "Dégâts / soutien élémentaire",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Les différentes variantes appliquent bonus alliés et malus élémentaires aux ennemis."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Crabe",
+        "role": "Poison / renvoi",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Peut appliquer un poison et activer un renvoi de dommages."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Spécial : Passer l'éponge",
+        "condition": "À partir du tour 2, Mob l'Éponge doit être poussé ou attiré au moins une fois à chaque tour global.",
+        "tips": [
+          "Le tuer au tour 1 contourne la contrainte."
+        ],
+        "warnings": [
+          "À partir du tour 2, ne laisser passer aucun tour global sans déplacement forcé du boss."
+        ]
+      }
+    ],
+    "strategy": [
+      "Éliminer Mob l'Éponge rapidement ou contrôler régulièrement son placement.",
+      "Éviter les alignements."
+    ]
+  },
+  {
     "key": "grange-tournesol-affame",
     "name": "Grange du Tournesol Affamé",
     "level": 20,
@@ -295,101 +390,6 @@
     "strategy": [
       "Rester à distance du boss.",
       "Éliminer les soutiens et les invocations avant qu'ils prolongent le combat."
-    ]
-  },
-  {
-    "key": "chateau-ensable",
-    "name": "Château Ensablé",
-    "level": 20,
-    "source": "DofusPourLesNoobs — Château Ensablé",
-    "verifiedOn": "30/08/2026",
-    "quickSummary": [
-      "Mob l'Éponge peut désenvoûter en zone, retirer de la portée et se soigner.",
-      "Les monstres des Calanques jouent beaucoup sur les bonus/malus élémentaires et le placement."
-    ],
-    "globalMechanics": [
-      "Le combat ne repose pas sur une invulnérabilité dans sa version normale."
-    ],
-    "boss": {
-      "key": "mob-l-eponge",
-      "name": "Mob l'Éponge",
-      "quickSummary": [
-        "Désenvoûtement de zone.",
-        "Retrait de portée.",
-        "Soin de zone."
-      ],
-      "mechanics": [
-        "Le boss peut enlever les envoûtements des personnages proches et se maintenir en vie grâce à son soin."
-      ],
-      "importantSpells": [
-        {
-          "name": "Rinçage",
-          "description": "Retire les envoûtements des ennemis dans un cercle de rayon 2 autour du boss."
-        },
-        {
-          "name": "Dégraissage",
-          "description": "Attaque eau en longue ligne et retire de la portée pour 1 tour."
-        },
-        {
-          "name": "Régénération Spontanée",
-          "description": "Soigne en zone autour du boss."
-        }
-      ],
-      "dangers": [],
-      "zones": [
-        {
-          "sourceName": "Mob l'Éponge",
-          "name": "Dégraissage",
-          "area": "Ligne partant du corps-à-corps jusqu'à longue portée.",
-          "trigger": "Le boss utilise Dégraissage.",
-          "effect": "Dégâts eau et retrait de portée.",
-          "avoid": "Éviter les alignements prolongés."
-        }
-      ],
-      "strategy": [
-        "Le focus rapide limite ses soins.",
-        "Éviter de regrouper les personnages près de lui si les envoûtements sont importants."
-      ]
-    },
-    "monsters": [
-      {
-        "name": "Pichons des Calanques",
-        "role": "Dégâts / soutien élémentaire",
-        "priority": "Moyenne",
-        "mechanics": [
-          "Les différentes variantes appliquent bonus alliés et malus élémentaires aux ennemis."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Crabe",
-        "role": "Poison / renvoi",
-        "priority": "Moyenne",
-        "mechanics": [
-          "Peut appliquer un poison et activer un renvoi de dommages."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      }
-    ],
-    "dangers": [],
-    "zones": [],
-    "achievements": [
-      {
-        "name": "Spécial : Passer l'éponge",
-        "condition": "À partir du tour 2, Mob l'Éponge doit être poussé ou attiré au moins une fois à chaque tour global.",
-        "tips": [
-          "Le tuer au tour 1 contourne la contrainte."
-        ],
-        "warnings": [
-          "À partir du tour 2, ne laisser passer aucun tour global sans déplacement forcé du boss."
-        ]
-      }
-    ],
-    "strategy": [
-      "Éliminer Mob l'Éponge rapidement ou contrôler régulièrement son placement.",
-      "Éviter les alignements."
     ]
   },
   {
@@ -527,6 +527,128 @@
     ]
   },
   {
+    "key": "akademie-des-gobs",
+    "name": "Akadémie des Gobs",
+    "level": 40,
+    "source": "DofusPourLesNoobs — Akadémie des Gobs",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Tous les Gobelins possèdent le passif Travail d'équipe !",
+      "Un Gobelin gagne 5% de dommages finaux pour 1 tour par Gobelin dans un cercle de rayon 2 lorsqu'il commence son tour.",
+      "Directeur Grunob invoque Dagobert et donne des PM à ses alliés."
+    ],
+    "globalMechanics": [
+      "Éviter de laisser les Gobelins groupés réduit leurs bonus de dommages."
+    ],
+    "boss": {
+      "key": "directeur-grunob",
+      "name": "Directeur Grunob",
+      "quickSummary": [
+        "Attraction de monstres.",
+        "Boost PM.",
+        "Invocation de Dagobert."
+      ],
+      "mechanics": [
+        "Le passif Travail d'équipe ! s'applique également au boss."
+      ],
+      "importantSpells": [
+        {
+          "name": "Cuvée des Gobs",
+          "description": "Dégâts eau et attire les monstres autour de la cible de 2 cases."
+        },
+        {
+          "name": "Sermon Éducatif",
+          "description": "Donne 2 PM pour 1 tour aux alliés en petite zone."
+        },
+        {
+          "name": "Chachagobert",
+          "description": "Invoque Dagobert ; relance de 4 tours."
+        },
+        {
+          "name": "Miaulement agaçant — Dagobert",
+          "description": "Vole 1 PA aux ennemis dans un cercle autour de Dagobert."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Éliminer Dagobert quand il apparaît.",
+        "Réduire le nombre de Gobelins pour affaiblir Travail d'équipe !."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Gob-Trotteur",
+        "role": "Mobilité / dégâts",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Gobaladée",
+        "role": "Soutien / bouclier",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Gobaliste",
+        "role": "Distance / retrait PO",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Gobet",
+        "role": "Placement / mêlée",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Nomade",
+        "condition": "Utiliser tous ses PM à chaque tour.",
+        "tips": [
+          "Rester à distance pour éviter le tacle."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Premier",
+        "condition": "Directeur Grunob doit être achevé en premier.",
+        "tips": [
+          "Dagobert peut être éliminé sans faire échouer Premier."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Dirige mais mal rédige",
+        "condition": "À partir du tour 2, chaque ennemi doit commencer son tour adjacent à un allié ou à un ennemi.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Séparer ou éliminer rapidement les Gobelins.",
+      "Tuer Dagobert.",
+      "Boss rapidement si Premier est visé."
+    ]
+  },
+  {
     "key": "cache-kankreblath",
     "name": "Cache de Kankreblath",
     "level": 40,
@@ -652,139 +774,6 @@
       "Pyrasite en premier.",
       "Réduire rapidement le nombre d'ennemis.",
       "Kankreblath généralement en dernier."
-    ]
-  },
-  {
-    "key": "maison-fantome",
-    "name": "Maison Fantôme",
-    "level": 40,
-    "source": "DofusPourLesNoobs — Maison Fantôme",
-    "verifiedOn": "30/08/2026",
-    "quickSummary": [
-      "Boostache est Lourd et Enraciné : il ne peut pas être déplacé normalement.",
-      "Il réinvoque des monstres morts et invoque des Ashi-magari.",
-      "Les Ashi-magari retirent massivement les PM et appliquent Pesanteur au contact."
-    ],
-    "globalMechanics": [
-      "Le donjon contient plusieurs sources d'érosion, d'insoignable, de retrait de portée et de puissance."
-    ],
-    "boss": {
-      "key": "boostache",
-      "name": "Boostache",
-      "quickSummary": [
-        "Indéplaçable.",
-        "Réinvocation des monstres morts.",
-        "Invocation d'Ashi-magari.",
-        "Érosion."
-      ],
-      "mechanics": [
-        "Boostache reste Lourd et Enraciné pendant le combat.",
-        "L'Enfer des Zombies peut réinvoquer un monstre mort chaque tour."
-      ],
-      "importantSpells": [
-        {
-          "name": "Frayeurs",
-          "description": "Repousse les ennemis alignés proches du boss."
-        },
-        {
-          "name": "L'Enfer des Zombies",
-          "description": "Réinvoque un monstre mort du donjon."
-        },
-        {
-          "name": "Le Dentiste",
-          "description": "Inflige des dégâts air et applique 30% d'érosion pendant 2 tours."
-        },
-        {
-          "name": "Esprit empêtrant",
-          "description": "Invoque un Ashi-magari à proximité."
-        },
-        {
-          "name": "Enchevêtrement — Ashi-magari",
-          "description": "Au contact, retire 100 PM et applique Pesanteur pendant 1 tour."
-        }
-      ],
-      "dangers": [
-        {
-          "sourceName": "Ashi-magari",
-          "name": "Enchevêtrement",
-          "trigger": "Commencer ou rester au contact de l'invocation.",
-          "effect": "Retrait massif de PM et état Pesanteur pour 1 tour.",
-          "avoid": "Ne pas se laisser enfermer au contact des Ashi-magari.",
-          "isOneShot": false
-        }
-      ],
-      "zones": [],
-      "strategy": [
-        "Focus rapide du boss pour limiter les réinvocations.",
-        "Contrôler l'espace autour des Ashi-magari."
-      ]
-    },
-    "monsters": [
-      {
-        "name": "Boostache Prépubère",
-        "role": "Mêlée / boost global",
-        "priority": "Moyenne",
-        "mechanics": [
-          "Peut donner durablement des PM aux monstres."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Gargrouille",
-        "role": "Zone / gros coup au contact",
-        "priority": "Haute",
-        "mechanics": [
-          "Possède une attaque de mêlée potentiellement très lourde."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Kwoan",
-        "role": "Retrait de portée / mêlée",
-        "priority": "Moyenne",
-        "mechanics": [],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Tofu Maléfique",
-        "role": "Érosion / insoignable",
-        "priority": "Haute",
-        "mechanics": [
-          "Peut appliquer érosion et insoignable en zone courte."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Vampire",
-        "role": "Vol de vie / soutien",
-        "priority": "Moyenne",
-        "mechanics": [],
-        "importantSpells": [],
-        "dangers": []
-      }
-    ],
-    "dangers": [],
-    "zones": [],
-    "achievements": [
-      {
-        "name": "Spécial : Empêtrement d'esprit entêtant",
-        "condition": "Aucun Ashi-magari ne doit être achevé pendant toute la durée du combat.",
-        "tips": [
-          "Éliminer Boostache en priorité et ignorer ses invocations."
-        ],
-        "warnings": [
-          "Attention aux dégâts de zone sur les Ashi-magari."
-        ]
-      }
-    ],
-    "strategy": [
-      "Focus Boostache.",
-      "Éviter de tuer les Ashi-magari si le succès spécial est visé.",
-      "Éviter l'érosion inutile."
     ]
   },
   {
@@ -1232,83 +1221,112 @@
     ]
   },
   {
-    "key": "akademie-des-gobs",
-    "name": "Akadémie des Gobs",
+    "key": "maison-fantome",
+    "name": "Maison Fantôme",
     "level": 40,
-    "source": "DofusPourLesNoobs — Akadémie des Gobs",
+    "source": "DofusPourLesNoobs — Maison Fantôme",
     "verifiedOn": "30/08/2026",
     "quickSummary": [
-      "Tous les Gobelins possèdent le passif Travail d'équipe !",
-      "Un Gobelin gagne 5% de dommages finaux pour 1 tour par Gobelin dans un cercle de rayon 2 lorsqu'il commence son tour.",
-      "Directeur Grunob invoque Dagobert et donne des PM à ses alliés."
+      "Boostache est Lourd et Enraciné : il ne peut pas être déplacé normalement.",
+      "Il réinvoque des monstres morts et invoque des Ashi-magari.",
+      "Les Ashi-magari retirent massivement les PM et appliquent Pesanteur au contact."
     ],
     "globalMechanics": [
-      "Éviter de laisser les Gobelins groupés réduit leurs bonus de dommages."
+      "Le donjon contient plusieurs sources d'érosion, d'insoignable, de retrait de portée et de puissance."
     ],
     "boss": {
-      "key": "directeur-grunob",
-      "name": "Directeur Grunob",
+      "key": "boostache",
+      "name": "Boostache",
       "quickSummary": [
-        "Attraction de monstres.",
-        "Boost PM.",
-        "Invocation de Dagobert."
+        "Indéplaçable.",
+        "Réinvocation des monstres morts.",
+        "Invocation d'Ashi-magari.",
+        "Érosion."
       ],
       "mechanics": [
-        "Le passif Travail d'équipe ! s'applique également au boss."
+        "Boostache reste Lourd et Enraciné pendant le combat.",
+        "L'Enfer des Zombies peut réinvoquer un monstre mort chaque tour."
       ],
       "importantSpells": [
         {
-          "name": "Cuvée des Gobs",
-          "description": "Dégâts eau et attire les monstres autour de la cible de 2 cases."
+          "name": "Frayeurs",
+          "description": "Repousse les ennemis alignés proches du boss."
         },
         {
-          "name": "Sermon Éducatif",
-          "description": "Donne 2 PM pour 1 tour aux alliés en petite zone."
+          "name": "L'Enfer des Zombies",
+          "description": "Réinvoque un monstre mort du donjon."
         },
         {
-          "name": "Chachagobert",
-          "description": "Invoque Dagobert ; relance de 4 tours."
+          "name": "Le Dentiste",
+          "description": "Inflige des dégâts air et applique 30% d'érosion pendant 2 tours."
         },
         {
-          "name": "Miaulement agaçant — Dagobert",
-          "description": "Vole 1 PA aux ennemis dans un cercle autour de Dagobert."
+          "name": "Esprit empêtrant",
+          "description": "Invoque un Ashi-magari à proximité."
+        },
+        {
+          "name": "Enchevêtrement — Ashi-magari",
+          "description": "Au contact, retire 100 PM et applique Pesanteur pendant 1 tour."
         }
       ],
-      "dangers": [],
+      "dangers": [
+        {
+          "sourceName": "Ashi-magari",
+          "name": "Enchevêtrement",
+          "trigger": "Commencer ou rester au contact de l'invocation.",
+          "effect": "Retrait massif de PM et état Pesanteur pour 1 tour.",
+          "avoid": "Ne pas se laisser enfermer au contact des Ashi-magari.",
+          "isOneShot": false
+        }
+      ],
       "zones": [],
       "strategy": [
-        "Éliminer Dagobert quand il apparaît.",
-        "Réduire le nombre de Gobelins pour affaiblir Travail d'équipe !."
+        "Focus rapide du boss pour limiter les réinvocations.",
+        "Contrôler l'espace autour des Ashi-magari."
       ]
     },
     "monsters": [
       {
-        "name": "Gob-Trotteur",
-        "role": "Mobilité / dégâts",
+        "name": "Boostache Prépubère",
+        "role": "Mêlée / boost global",
         "priority": "Moyenne",
-        "mechanics": [],
+        "mechanics": [
+          "Peut donner durablement des PM aux monstres."
+        ],
         "importantSpells": [],
         "dangers": []
       },
       {
-        "name": "Gobaladée",
-        "role": "Soutien / bouclier",
-        "priority": "Moyenne",
-        "mechanics": [],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Gobaliste",
-        "role": "Distance / retrait PO",
+        "name": "Gargrouille",
+        "role": "Zone / gros coup au contact",
         "priority": "Haute",
+        "mechanics": [
+          "Possède une attaque de mêlée potentiellement très lourde."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Kwoan",
+        "role": "Retrait de portée / mêlée",
+        "priority": "Moyenne",
         "mechanics": [],
         "importantSpells": [],
         "dangers": []
       },
       {
-        "name": "Gobet",
-        "role": "Placement / mêlée",
+        "name": "Tofu Maléfique",
+        "role": "Érosion / insoignable",
+        "priority": "Haute",
+        "mechanics": [
+          "Peut appliquer érosion et insoignable en zone courte."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Vampire",
+        "role": "Vol de vie / soutien",
         "priority": "Moyenne",
         "mechanics": [],
         "importantSpells": [],
@@ -1319,38 +1337,20 @@
     "zones": [],
     "achievements": [
       {
-        "name": "Nomade",
-        "condition": "Utiliser tous ses PM à chaque tour.",
+        "name": "Spécial : Empêtrement d'esprit entêtant",
+        "condition": "Aucun Ashi-magari ne doit être achevé pendant toute la durée du combat.",
         "tips": [
-          "Rester à distance pour éviter le tacle."
+          "Éliminer Boostache en priorité et ignorer ses invocations."
         ],
-        "warnings": []
-      },
-      {
-        "name": "Premier",
-        "condition": "Directeur Grunob doit être achevé en premier.",
-        "tips": [
-          "Dagobert peut être éliminé sans faire échouer Premier."
-        ],
-        "warnings": []
-      },
-      {
-        "name": "Spécial : Dirige mais mal rédige",
-        "condition": "À partir du tour 2, chaque ennemi doit commencer son tour adjacent à un allié ou à un ennemi.",
-        "tips": [],
-        "warnings": []
-      },
-      {
-        "name": "Duo",
-        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
-        "tips": [],
-        "warnings": []
+        "warnings": [
+          "Attention aux dégâts de zone sur les Ashi-magari."
+        ]
       }
     ],
     "strategy": [
-      "Séparer ou éliminer rapidement les Gobelins.",
-      "Tuer Dagobert.",
-      "Boss rapidement si Premier est visé."
+      "Focus Boostache.",
+      "Éviter de tuer les Ashi-magari si le succès spécial est visé.",
+      "Éviter l'érosion inutile."
     ]
   },
   {
@@ -1628,136 +1628,6 @@
     ]
   },
   {
-    "key": "grotte-hesque",
-    "name": "Grotte Hesque",
-    "level": 50,
-    "source": "DofusPourLesNoobs — Grotte Hesque",
-    "verifiedOn": "30/08/2026",
-    "quickSummary": [
-      "Le Corailleur Magistral possède un véritable OS de mêlée.",
-      "Il ne peut utiliser son OS que lorsqu'il gagne suffisamment de PA via Coraillement Magistral.",
-      "Quand il est sous ce boost, il perd ses PM à la fin de son tour, ce qui permet de le tenir à distance."
-    ],
-    "globalMechanics": [
-      "Les Palmifleurs peuvent retirer 100% de résistances pendant 2 tours ; ils sont prioritaires."
-    ],
-    "boss": {
-      "key": "corailleur-magistral",
-      "name": "Corailleur Magistral",
-      "quickSummary": [
-        "OS de mêlée.",
-        "Boost massif de PA.",
-        "Très peu dangereux à distance."
-      ],
-      "mechanics": [
-        "Coraillement Magistral donne 12 PA et 400 puissance pour 4 tours mais fait perdre ses 3 PM pendant la durée.",
-        "Frappe de Corail Magistrale nécessite 16 PA et tue sa cible en mêlée."
-      ],
-      "importantSpells": [
-        {
-          "name": "Coraillement Magistral",
-          "description": "Donne 12 PA et 400 puissance pour 4 tours ; le boss perd ses PM à la fin de ses tours pendant l'effet."
-        },
-        {
-          "name": "Frappe de Corail Magistrale",
-          "description": "Attaque de mêlée à 20 000 dégâts air ; si la cible survit aux dégâts, elle est tout de même tuée."
-        },
-        {
-          "name": "Lancer de Corail Magistral",
-          "description": "Attaque air à distance et retrait d'agilité."
-        }
-      ],
-      "dangers": [
-        {
-          "sourceName": "Corailleur Magistral",
-          "name": "Frappe de Corail Magistrale",
-          "trigger": "Le boss possède au moins 16 PA et atteint une cible au corps-à-corps.",
-          "effect": "20 000 dégâts air puis mort de la cible si elle est encore en vie.",
-          "avoid": "Ne jamais terminer à portée de mêlée pendant les tours où le boss possède ses PA supplémentaires.",
-          "isOneShot": true
-        }
-      ],
-      "zones": [],
-      "strategy": [
-        "Rester loin du boss.",
-        "Éliminer les Palmifleurs en premier.",
-        "Profiter de ses tours à 0 PM."
-      ]
-    },
-    "monsters": [
-      {
-        "name": "Palmifleurs",
-        "role": "Débuff résistances / soin de zone",
-        "priority": "Très haute",
-        "mechanics": [
-          "Décapsulation retire 100% de résistances dans tous les éléments pendant 2 tours.",
-          "Peuvent soigner en zone."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Crustorails",
-        "role": "Mêlée / boost résistances",
-        "priority": "Moyenne",
-        "mechanics": [
-          "Les variantes frappent dans leur élément et peuvent renforcer les résistances alliées."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      },
-      {
-        "name": "Corailleur",
-        "role": "Zone / retrait PM",
-        "priority": "Moyenne",
-        "mechanics": [
-          "Possède des attaques eau et du retrait PM."
-        ],
-        "importantSpells": [],
-        "dangers": []
-      }
-    ],
-    "dangers": [],
-    "zones": [],
-    "achievements": [
-      {
-        "name": "Hardi",
-        "condition": "Les alliés doivent finir leur tour sur une cellule adjacente à celle d'un ennemi.",
-        "tips": [],
-        "warnings": [
-          "Le contact avec le Corailleur Magistral peut être mortel."
-        ]
-      },
-      {
-        "name": "Blitzkrieg",
-        "condition": "Lorsqu'un ennemi est attaqué, il doit être achevé avant le début de son tour de jeu.",
-        "tips": [],
-        "warnings": []
-      },
-      {
-        "name": "Spécial : Collé-serré",
-        "condition": "À partir du tour global 2, les alliés doivent commencer leur tour au corps-à-corps du Corailleur Magistral ; le boss doit être achevé en dernier.",
-        "tips": [
-          "À haut niveau, finir le combat tour 1 permet d'éviter la contrainte à partir du tour 2."
-        ],
-        "warnings": [
-          "Au niveau du donjon, cette condition est extrêmement dangereuse à cause de l'OS."
-        ]
-      },
-      {
-        "name": "Duo",
-        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
-        "tips": [],
-        "warnings": []
-      }
-    ],
-    "strategy": [
-      "Palmifleurs en premier.",
-      "Rester à distance du Corailleur Magistral.",
-      "Ne jamais offrir une cible à son OS."
-    ]
-  },
-  {
     "key": "donjon-larves",
     "name": "Donjon des Larves",
     "level": 50,
@@ -1892,6 +1762,136 @@
       "Larve Saphir en priorité.",
       "Profiter des tours d'Enlisement pour burst.",
       "Boss ensuite."
+    ]
+  },
+  {
+    "key": "grotte-hesque",
+    "name": "Grotte Hesque",
+    "level": 50,
+    "source": "DofusPourLesNoobs — Grotte Hesque",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Le Corailleur Magistral possède un véritable OS de mêlée.",
+      "Il ne peut utiliser son OS que lorsqu'il gagne suffisamment de PA via Coraillement Magistral.",
+      "Quand il est sous ce boost, il perd ses PM à la fin de son tour, ce qui permet de le tenir à distance."
+    ],
+    "globalMechanics": [
+      "Les Palmifleurs peuvent retirer 100% de résistances pendant 2 tours ; ils sont prioritaires."
+    ],
+    "boss": {
+      "key": "corailleur-magistral",
+      "name": "Corailleur Magistral",
+      "quickSummary": [
+        "OS de mêlée.",
+        "Boost massif de PA.",
+        "Très peu dangereux à distance."
+      ],
+      "mechanics": [
+        "Coraillement Magistral donne 12 PA et 400 puissance pour 4 tours mais fait perdre ses 3 PM pendant la durée.",
+        "Frappe de Corail Magistrale nécessite 16 PA et tue sa cible en mêlée."
+      ],
+      "importantSpells": [
+        {
+          "name": "Coraillement Magistral",
+          "description": "Donne 12 PA et 400 puissance pour 4 tours ; le boss perd ses PM à la fin de ses tours pendant l'effet."
+        },
+        {
+          "name": "Frappe de Corail Magistrale",
+          "description": "Attaque de mêlée à 20 000 dégâts air ; si la cible survit aux dégâts, elle est tout de même tuée."
+        },
+        {
+          "name": "Lancer de Corail Magistral",
+          "description": "Attaque air à distance et retrait d'agilité."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Corailleur Magistral",
+          "name": "Frappe de Corail Magistrale",
+          "trigger": "Le boss possède au moins 16 PA et atteint une cible au corps-à-corps.",
+          "effect": "20 000 dégâts air puis mort de la cible si elle est encore en vie.",
+          "avoid": "Ne jamais terminer à portée de mêlée pendant les tours où le boss possède ses PA supplémentaires.",
+          "isOneShot": true
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Rester loin du boss.",
+        "Éliminer les Palmifleurs en premier.",
+        "Profiter de ses tours à 0 PM."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Palmifleurs",
+        "role": "Débuff résistances / soin de zone",
+        "priority": "Très haute",
+        "mechanics": [
+          "Décapsulation retire 100% de résistances dans tous les éléments pendant 2 tours.",
+          "Peuvent soigner en zone."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Crustorails",
+        "role": "Mêlée / boost résistances",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Les variantes frappent dans leur élément et peuvent renforcer les résistances alliées."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Corailleur",
+        "role": "Zone / retrait PM",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Possède des attaques eau et du retrait PM."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Hardi",
+        "condition": "Les alliés doivent finir leur tour sur une cellule adjacente à celle d'un ennemi.",
+        "tips": [],
+        "warnings": [
+          "Le contact avec le Corailleur Magistral peut être mortel."
+        ]
+      },
+      {
+        "name": "Blitzkrieg",
+        "condition": "Lorsqu'un ennemi est attaqué, il doit être achevé avant le début de son tour de jeu.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Collé-serré",
+        "condition": "À partir du tour global 2, les alliés doivent commencer leur tour au corps-à-corps du Corailleur Magistral ; le boss doit être achevé en dernier.",
+        "tips": [
+          "À haut niveau, finir le combat tour 1 permet d'éviter la contrainte à partir du tour 2."
+        ],
+        "warnings": [
+          "Au niveau du donjon, cette condition est extrêmement dangereuse à cause de l'OS."
+        ]
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Palmifleurs en premier.",
+      "Rester à distance du Corailleur Magistral.",
+      "Ne jamais offrir une cible à son OS."
     ]
   },
   {
@@ -2166,6 +2166,2686 @@
       "Timongouste en premier.",
       "Puis Buffalourd et Grolours.",
       "Rakoopeur en dernier."
+    ]
+  },
+  {
+    "key": "chateau-wa-wabbit",
+    "name": "Château du Wa Wabbit",
+    "level": 60,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Le Wa Wabbit combine réduction de dommages, Cawottes Royales et malus de puissance.",
+      "Depuis la mise à jour 3.6, Cawotte Woyale peut être relancée tous les 2 tours et augmente les critiques du boss de façon cumulable.",
+      "Le glyphe des Cawottes peut appliquer Insoignable : ne laissez pas vos personnages y commencer leur tour."
+    ],
+    "globalMechanics": [
+      "Le Wa Wabbit a été renforcé en 3.6 malgré une baisse de ses PV.",
+      "Plus le combat dure, plus les bonus de critique obtenus via Cawotte Woyale deviennent gênants.",
+      "Quand le Wa reste seul, certains de ses effets défensifs/offensifs deviennent plus forts."
+    ],
+    "boss": {
+      "key": "wa-wabbit",
+      "name": "Wa Wabbit",
+      "quickSummary": [
+        "Boss fuyard.",
+        "Réduction de dommages.",
+        "Invocation de Cawottes.",
+        "Malus global de puissance."
+      ],
+      "mechanics": [
+        "Abrutissement retire 150 puissance à tous les personnages pour 1 tour ; si le Wa est seul, l'effet est renforcé et inflige aussi des dégâts Eau.",
+        "Awmuwe Woyale réduit de 30% les dommages subis par le Wa et l'allié ciblé ; s'il est seul, le Wa gagne aussi un bouclier.",
+        "Cawotte Woyale invoque une Cawotte et donne 10% de critique au Wa de manière cumulable et permanente."
+      ],
+      "importantSpells": [
+        {
+          "name": "WaWabehameha",
+          "description": "Attaque Neutre à longue portée."
+        },
+        {
+          "name": "Abrutissement",
+          "description": "Malus global de puissance ; effet renforcé si le Wa Wabbit est seul."
+        },
+        {
+          "name": "Awmuwe Woyale",
+          "description": "Réduction de 30% des dommages subis par le Wa et un allié ; bouclier supplémentaire si le Wa est seul."
+        },
+        {
+          "name": "Cawotte Woyale",
+          "description": "Invoque une Cawotte tous les 2 tours et donne 10% de critique cumulable au boss."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Cawotte Woyale",
+          "name": "État Insoignable",
+          "trigger": "Un personnage commence son tour dans le glyphe d'une Cawotte Woyale.",
+          "effect": "Le personnage reçoit l'état Insoignable.",
+          "avoid": "Sortir du glyphe avant la fin du tour précédent.",
+          "isOneShot": false
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Éliminer d'abord les Wabbits les plus gênants.",
+        "Limiter les lignes de vue du Wa.",
+        "Ne pas rester dans les glyphes de Cawotte."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Wo Wabbit",
+        "role": "Dégâts / pression",
+        "priority": "Haute",
+        "mechanics": [
+          "À éliminer rapidement pour réduire la pression du groupe."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Grand Pa Wabbit",
+        "role": "Entrave / soutien",
+        "priority": "Haute",
+        "mechanics": [
+          "Peut fortement gêner le placement et les actions."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Wabbits du château",
+        "role": "Distance / placement",
+        "priority": "Moyenne",
+        "mechanics": [
+          "La famille Wabbit combine dégâts à distance, déplacement et entrave."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Hardi",
+        "condition": "Les alliés doivent finir leur tour sur une cellule adjacente à celle d'un ennemi.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Blitzkrieg",
+        "condition": "Lorsqu'un ennemi est attaqué, il doit être achevé avant le début de son tour de jeu.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Mené à la cawotte",
+        "condition": "Tant qu'une Cawotte Woyale est présente, seul le Wa Wabbit doit recevoir des dommages.",
+        "tips": [
+          "Décider avant chaque tour si vous gérez la Cawotte ou si vous poursuivez uniquement le boss."
+        ],
+        "warnings": [
+          "Un dégât de zone accidentel sur un autre monstre pendant qu'une Cawotte est présente peut faire échouer le succès."
+        ]
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Éliminer les monstres prioritaires avant le boss en combat normal.",
+      "Surveiller les Cawottes et les glyphes.",
+      "Ne pas laisser le bonus critique s'accumuler inutilement."
+    ]
+  },
+  {
+    "key": "clos-des-blops",
+    "name": "Clos des Blops",
+    "level": 60,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Le donjon possède quatre gardiens possibles : Blop Coco Royal, Griotte Royal, Indigo Royal et Reinette Royal.",
+      "Chaque Royal est lié à un élément et le choix de parcours détermine le boss affronté.",
+      "Les Blops jouent sur les résistances élémentaires, les invocations et les placements."
+    ],
+    "globalMechanics": [
+      "Cette fiche regroupe volontairement les quatre Blops Royaux car Nox possède actuellement un seul bloc Boss par donjon.",
+      "Prévoir plusieurs éléments de frappe rend le donjon beaucoup plus confortable.",
+      "Les invocations ennemies deviennent importantes pour le succès spécial."
+    ],
+    "boss": {
+      "key": "blops-royaux",
+      "name": "Blops Royaux",
+      "quickSummary": [
+        "Quatre variantes élémentaires.",
+        "Invocation.",
+        "Résistances élémentaires marquées."
+      ],
+      "mechanics": [
+        "Le Royal rencontré dépend du parcours choisi : Coco, Griotte, Indigo ou Reinette.",
+        "Chaque version possède une identité élémentaire et des résistances qui favorisent l'utilisation de son élément opposé.",
+        "Le donjon sert également de passage vers l'Antre du Blop Multicolore Royal, qui est un donjon de niveau supérieur."
+      ],
+      "importantSpells": [],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Adapter l'élément de frappe au Royal choisi.",
+        "Éviter de disperser les dégâts.",
+        "Contrôler les invocations."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Blops",
+        "role": "Distance / élémentaire",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Chaque couleur possède ses propres résistances et attaques élémentaires."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Biblops",
+        "role": "Soutien / invocation",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Peuvent compliquer le placement et rallonger le combat."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Tronkoblop",
+        "role": "Soutien / tank",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Peut protéger ou gêner le focus selon la composition de la salle."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Duel",
+        "condition": "Lorsqu'un allié attaque un ennemi, aucun autre allié ne doit attaquer cet ennemi pendant le même tour global.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Prudent",
+        "condition": "Les alliés ne doivent jamais finir leur tour adjacents à un ennemi.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Touche pas à mon blop",
+        "condition": "Les invocations ennemies ne doivent subir aucun dommage.",
+        "tips": [
+          "Éviter les zones et glyphes sur les invocations."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre le boss avec 2 personnages maximum et respecter la limite de tours du succès.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Choisir le Royal correspondant aux éléments de l'équipe.",
+      "Focus une cible à la fois.",
+      "Ignorer les invocations si le succès spécial est visé."
+    ]
+  },
+  {
+    "key": "gelaxieme-dimension",
+    "name": "Gelaxième Dimension",
+    "level": 60,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Quatre Gelées Royales existent : Bleuet, Citron, Fraise et Menthe.",
+      "Il est possible de préparer le parcours pour affronter plusieurs Royales, voire les quatre.",
+      "Chaque Royale possède 70% de résistances dans trois éléments et une faiblesse dans son propre élément."
+    ],
+    "globalMechanics": [
+      "Les glyphes de Tartinade infligent des dégâts aux personnages qui y commencent leur tour et soignent la couleur correspondante.",
+      "Depuis la mise à jour 3.6, les Gelées invoquées par les Royales ont 20% de PV en moins.",
+      "Une équipe multiélément est vivement conseillée."
+    ],
+    "boss": {
+      "key": "gelees-royales",
+      "name": "Gelées Royales",
+      "quickSummary": [
+        "Quatre variantes.",
+        "Glyphes élémentaires.",
+        "Invocations.",
+        "Très fortes résistances croisées."
+      ],
+      "mechanics": [
+        "Bleuet est faible Eau, Citron Air, Fraise Feu et Menthe Terre.",
+        "Tartinade téléporte la Royale et pose un glyphe à partir du tour 2.",
+        "Les invocations ont été affaiblies de 20% de PV en mise à jour 3.6."
+      ],
+      "importantSpells": [
+        {
+          "name": "Tartinade",
+          "description": "Téléporte la Gelée Royale sur la case ciblée et pose un glyphe de début de tour."
+        }
+      ],
+      "dangers": [],
+      "zones": [
+        {
+          "sourceName": "Gelées Royales",
+          "name": "Glyphes de Tartinade",
+          "area": "Case/glyphe élémentaire.",
+          "trigger": "Un personnage commence son tour dans le glyphe.",
+          "effect": "Dégâts élémentaires ; une Gelée de la couleur correspondante peut y être soignée.",
+          "avoid": "Terminer son tour hors des glyphes."
+        }
+      ],
+      "strategy": [
+        "Prévoir les quatre éléments si plusieurs Royales sont affrontées.",
+        "Sortir systématiquement des glyphes.",
+        "Éliminer les invocations si elles deviennent gênantes."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Gelées",
+        "role": "Élémentaire / placement",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Les couleurs possèdent résistances et attaques élémentaires différentes."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Gelées invoquées",
+        "role": "Renfort",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Les invocations des Royales ont 20% de PV en moins depuis la mise à jour 3.6."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Duel",
+        "condition": "Un même ennemi ne doit pas être attaqué par plusieurs alliés au cours du même tour global.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Collant",
+        "condition": "Les alliés doivent finir leur tour sur une cellule adjacente à celle d'un autre allié.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Privé de dessert",
+        "condition": "Les invocations ennemies ne doivent subir aucun dommage.",
+        "tips": [
+          "Éviter tout dégât de zone sur les Gelées invoquées."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre le combat avec 2 personnages maximum et respecter la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Préparer le parcours selon les Royales souhaitées.",
+      "Jouer multiélément.",
+      "Ne jamais négliger les glyphes."
+    ]
+  },
+  {
+    "key": "village-kanniboul",
+    "name": "Village Kanniboul",
+    "level": 60,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Kanniboul Ebil possède désormais Bénédiction Moonesque sous forme de passif.",
+      "Quand un monstre subit des dégâts, ses alliés proches peuvent être soignés à hauteur d'une partie de ces dégâts.",
+      "Ebil invoque une Poupée Aycetroy et possède depuis la 3.6 un sort d'attraction/dégâts en croix de taille 4."
+    ],
+    "globalMechanics": [
+      "Éviter de frapper des monstres groupés limite les soins provoqués par Bénédiction Moonesque.",
+      "La Poupée Aycetroy gagne progressivement de la puissance et n'est généralement pas une bonne cible prioritaire.",
+      "Le Kanniboul Sarbak est particulièrement gênant à cause de son poison lié aux PA utilisés."
+    ],
+    "boss": {
+      "key": "kanniboul-ebil",
+      "name": "Kanniboul Ebil",
+      "quickSummary": [
+        "Passif de soin de proximité.",
+        "Invocation de Poupée Aycetroy.",
+        "Attraction de zone.",
+        "État Maudit."
+      ],
+      "mechanics": [
+        "Bénédiction Moonesque soigne les alliés proches d'un monstre qui vient de subir des dégâts.",
+        "Inspiration Moonesque invoque la Poupée Aycetroy.",
+        "Bouboule inflige des dégâts et applique l'état Maudit.",
+        "Depuis la 3.6, Ebilation attire et inflige des dégâts dans une grande croix."
+      ],
+      "importantSpells": [
+        {
+          "name": "Ebilation",
+          "description": "Attire en zone croix de taille 4 et inflige des dégâts."
+        },
+        {
+          "name": "Inspiration Moonesque",
+          "description": "Invoque la Poupée Aycetroy."
+        },
+        {
+          "name": "Bouboule",
+          "description": "Inflige des dégâts et applique l'état Maudit."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Isoler les cibles avant de les frapper.",
+        "Éviter de perdre des tours sur la Poupée.",
+        "Éliminer les Kannibouls dangereux avant le boss en combat normal."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Kanniboul Sarbak",
+        "role": "Distance / poison PA",
+        "priority": "Très haute",
+        "mechanics": [
+          "Son poison sanctionne l'utilisation des PA ; priorité fréquente."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Kanniboul Eth",
+        "role": "Distance / boost",
+        "priority": "Haute",
+        "mechanics": [
+          "Peut voler des caractéristiques et renforcer les dégâts."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Kanniboul Jav",
+        "role": "Placement / dégâts",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Kanniboul Tam",
+        "role": "Soutien / placement",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Poupée Aycetroy",
+        "role": "Invocation évolutive",
+        "priority": "Faible",
+        "mechanics": [
+          "Gagne de la puissance avec le temps et peut infliger des dégâts en zone."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Zombie",
+        "condition": "Utiliser exactement 1 PM à chaque tour.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Premier",
+        "condition": "Kanniboul Ebil doit être achevé en premier.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Rituel de survie",
+        "condition": "Lorsqu'un ennemi subit des dommages, il doit être adjacent à au moins une entité, alliée ou ennemie.",
+        "tips": [
+          "Vérifier l'adjacence avant chaque ligne de dégâts."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Sarbak en priorité.",
+      "Séparer les ennemis pour limiter le soin passif.",
+      "Ignorer la Poupée autant que possible."
+    ]
+  },
+  {
+    "key": "cale-arche-otomai",
+    "name": "Cale de l'Arche d'Otomaï",
+    "level": 70,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Gourlo le Terrible possède 200% de résistances dans tous les éléments.",
+      "La mécanique du combat repose sur les tonneaux invoqués par Gourlo pour lui appliquer une faiblesse élémentaire.",
+      "Depuis la mise à jour 3.6, Bombarde est limité à 2 utilisations par cible."
+    ],
+    "globalMechanics": [
+      "Un tonneau doit être placé près de Gourlo puis survivre assez longtemps pour déclencher son effet de faiblesse.",
+      "L'élément de la faiblesse dépend du tonneau.",
+      "Les pirates possèdent plusieurs outils de poussée, d'attirance et de contrôle."
+    ],
+    "boss": {
+      "key": "gourlo-le-terrible",
+      "name": "Gourlo le Terrible",
+      "quickSummary": [
+        "200% résistances de base.",
+        "Invocations de tonneaux.",
+        "Vulnérabilité via tonneaux."
+      ],
+      "mechanics": [
+        "Invocation de Tonneau crée un tonneau élémentaire.",
+        "Après son délai, le tonneau applique autour de lui une forte faiblesse dans l'élément associé.",
+        "Il faut donc placer un tonneau au contact ou très près de Gourlo au bon moment."
+      ],
+      "importantSpells": [
+        {
+          "name": "Invocation de Tonneau",
+          "description": "Invoque un tonneau élémentaire qui servira à retirer les résistances du boss."
+        },
+        {
+          "name": "Un gros boulet sur un autre boulet",
+          "description": "Attaque Feu à distance."
+        },
+        {
+          "name": "Bombarde",
+          "description": "Attaque Feu au contact ; depuis la 3.6, limitée à 2 utilisations par cible."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Protéger le tonneau utile.",
+        "Placer Gourlo près du tonneau au déclenchement.",
+        "Profiter immédiatement de la fenêtre de faiblesse."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Flib",
+        "role": "Entrave / contrôle",
+        "priority": "Haute",
+        "mechanics": [
+          "Peut rendre le corps-à-corps particulièrement pénalisant."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Barbroussa",
+        "role": "Placement / distance",
+        "priority": "Haute",
+        "mechanics": [
+          "Peut déplacer fortement les personnages et casser le placement des tonneaux."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Sparo",
+        "role": "Dégâts / soutien",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Pirates de l'Arche",
+        "role": "Placement / dégâts",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Premier",
+        "condition": "Gourlo le Terrible doit être achevé en premier.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Économe",
+        "condition": "Les alliés ne doivent utiliser chaque action qu'une seule fois pendant tout le combat.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Tonneaux truands",
+        "condition": "Tous les ennemis doivent subir au moins une fois l'effet d'un tonneau de Gourlo.",
+        "tips": [
+          "Ne pas achever un monstre avant qu'il ait reçu l'effet demandé."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Nettoyer ou contrôler les pirates qui cassent le placement.",
+      "Créer la faiblesse avec un tonneau.",
+      "Burst Gourlo pendant la fenêtre."
+    ]
+  },
+  {
+    "key": "laboratoire-brumen-tinctorias",
+    "name": "Laboratoire de Brumen Tinctorias",
+    "level": 70,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Nelween joue sur le retrait de résistances, le retrait PM et le vol de vie.",
+      "Le Scorbute et la Crowneille sont des priorités fréquentes à cause de leurs malus et de leur mobilité.",
+      "Le combat ne comporte pas d'invulnérabilité complexe."
+    ],
+    "globalMechanics": [
+      "Répartir l'équipe sur la carte est utile pour le succès spécial et limite les effets groupés."
+    ],
+    "boss": {
+      "key": "nelween",
+      "name": "Nelween",
+      "quickSummary": [
+        "Retrait de résistances.",
+        "Retrait PM.",
+        "Vol de vie."
+      ],
+      "mechanics": [
+        "Exhalation Toxique retire des résistances à courte portée.",
+        "Mord Mollet frappe Terre et retire des PM.",
+        "Soin Diffus est un vol de vie Neutre."
+      ],
+      "importantSpells": [
+        {
+          "name": "Exhalation Toxique",
+          "description": "Retire 30% de résistances à la cible à courte portée."
+        },
+        {
+          "name": "Mord Mollet",
+          "description": "Inflige des dégâts Terre et retire 2 PM."
+        },
+        {
+          "name": "Soin Diffus",
+          "description": "Vol de vie Neutre à courte portée."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Éviter son contact si les résistances sont déjà réduites.",
+        "Éliminer d'abord les monstres qui entravent le plus."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Scorbute",
+        "role": "Débuff caractéristiques / poison",
+        "priority": "Très haute",
+        "mechanics": [
+          "Peut réduire plusieurs caractéristiques à distance et appliquer un poison."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Crowneille",
+        "role": "Très mobile / distance / poussée",
+        "priority": "Haute",
+        "mechanics": [
+          "Possède beaucoup de PM, frappe à distance et peut repousser."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Kolérat",
+        "role": "Dégâts / pression",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Ouginak / monstres du laboratoire",
+        "role": "Mêlée / entrave",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Anachorète",
+        "condition": "Les alliés ne doivent jamais finir leur tour adjacents les uns aux autres.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Laboratoire de curiosité",
+        "condition": "Lorsqu'un allié inflige des dommages, aucun autre allié ne doit se trouver à 3 PO ou moins de lui.",
+        "tips": [
+          "Écarter l'équipe avant chaque attaque."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Scorbute en premier.",
+      "Crowneille ensuite.",
+      "Conserver la mobilité pour éviter les zones de contact."
+    ]
+  },
+  {
+    "key": "pitons-rocheux-craqueleurs",
+    "name": "Pitons Rocheux des Craqueleurs",
+    "level": 70,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Le Craqueleur Légendaire combine protections, invocation, retrait massif de PA et dégâts de zone.",
+      "Sa faiblesse principale actuelle est l'Air, avec également une vulnérabilité relative Terre.",
+      "En 3.6, ses esquives PA/PM ont été réduites et Cœur de Craqueleur ne peut plus critiquer."
+    ],
+    "globalMechanics": [
+      "Ses protections peuvent fortement ralentir le focus.",
+      "Dès qu'une invocation ennemie existe, le succès spécial interdit de frapper les autres ennemis."
+    ],
+    "boss": {
+      "key": "craqueleur-legendaire",
+      "name": "Craqueleur Légendaire",
+      "quickSummary": [
+        "Protections.",
+        "Invocation.",
+        "Retrait PA massif.",
+        "Zone."
+      ],
+      "mechanics": [
+        "Pierre Étourdissante peut retirer énormément de PA au contact.",
+        "Peau de Silex augmente les résistances.",
+        "Invocation Montagnarde invoque un Craqueleur allié.",
+        "Peau de Topaze protège fortement un allié."
+      ],
+      "importantSpells": [
+        {
+          "name": "Pierre Étourdissante",
+          "description": "Dégâts Feu et retrait massif de PA au contact."
+        },
+        {
+          "name": "Peau de Silex",
+          "description": "Augmente fortement les résistances."
+        },
+        {
+          "name": "Invocation Montagnarde",
+          "description": "Invoque un Craqueleur."
+        },
+        {
+          "name": "Peau de Topaze",
+          "description": "Réduit fortement les dommages reçus par un allié."
+        },
+        {
+          "name": "Frappe du Craqueleur Légendaire",
+          "description": "Dégâts en zone autour de la cible."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Exploiter l'Air.",
+        "Attendre ou retirer les protections.",
+        "Éliminer immédiatement les invocations si le succès spécial est visé."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Craqueboule",
+        "role": "Entrave PA / boost",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Craqueleur",
+        "role": "Dégâts / retrait",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Craqueleur des Plaines",
+        "role": "Distance / placement",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Craqueleur Poli",
+        "role": "Soutien / résistances",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Premier",
+        "condition": "Craqueleur Légendaire doit être achevé en premier.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : De véritables craqu'",
+        "condition": "Aucun ennemi ne doit subir de dommages tant qu'une invocation ennemie est en vie.",
+        "tips": [
+          "Dès qu'Invocation Montagnarde est utilisée, attaquer uniquement l'invocation jusqu'à sa mort."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Contrôler les soutiens.",
+      "Profiter de la faiblesse Air.",
+      "Ne pas laisser les invocations s'accumuler."
+    ]
+  },
+  {
+    "key": "epreuve-draegnerys",
+    "name": "Épreuve de Draegnerys",
+    "level": 70,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Les Dragoeufs évoluent au fil du combat : Audacieux au tour 1, puis Intrépide au tour 4.",
+      "Draegnerys invoque deux Dragoeufs dès le tour 1 puis un nouveau tous les deux tours.",
+      "Chaque famille élémentaire possède une faiblesse opposée claire."
+    ],
+    "globalMechanics": [
+      "Audacieux puis Intrépide augmentent fortement PA, PM, puissance et vitalité.",
+      "Il faut normalement éliminer rapidement les renforts, sauf si le succès spécial impose d'attendre Intrépide.",
+      "Faiblesses : Ardoise → Feu, Argile → Terre, Calcaire → Air, Charbon → Eau."
+    ],
+    "boss": {
+      "key": "draegnerys",
+      "name": "Draegnerys",
+      "quickSummary": [
+        "Invocation régulière.",
+        "Boost des alliés.",
+        "Dégâts Feu / poussée."
+      ],
+      "mechanics": [
+        "Draegnerys commence à invoquer dès son premier tour.",
+        "Somatotropine donne PA, PM, vitalité et puissance à une cible.",
+        "Knout inflige des dégâts Feu et repousse."
+      ],
+      "importantSpells": [
+        {
+          "name": "Somatotropine",
+          "description": "Donne 2 PA, 2 PM, de la vitalité et de la puissance."
+        },
+        {
+          "name": "Knout",
+          "description": "Inflige des dégâts Feu et repousse de 2 cases."
+        },
+        {
+          "name": "Drakaaris",
+          "description": "Attaque Feu à longue portée."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Tuer les renforts rapidement.",
+        "Adapter l'élément à chaque Dragoeuf.",
+        "Ne pas laisser plusieurs Intrépides jouer simultanément."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Dragoeuf Ardoise",
+        "role": "Eau / distance",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Faible Feu."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoeuf Argile",
+        "role": "Air / mêlée",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Faible Terre."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoeuf Calcaire",
+        "role": "Terre / distance",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Faible Air."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoeuf Charbon",
+        "role": "Feu / distance",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Faible Eau."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoeuf Albâtre",
+        "role": "Multiélément / entrave",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Focus",
+        "condition": "Lorsqu'un ennemi est attaqué, il doit être achevé avant qu'un autre ennemi ne soit attaqué.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Hardi",
+        "condition": "Les alliés doivent finir leur tour adjacents à un ennemi.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Sortir de sa coquille",
+        "condition": "Les ennemis ne doivent être achevés que lorsqu'au moins un Dragoeuf Argile, Ardoise, Charbon ou Calcaire est dans l'état Intrépide.",
+        "tips": [
+          "Préparer une cible faible avant le tour 4 puis attendre Intrépide pour l'achever."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Nettoyer les invocations.",
+      "Exploiter systématiquement les faiblesses élémentaires.",
+      "Éviter de laisser le combat s'éterniser."
+    ]
+  },
+  {
+    "key": "cimetiere-mastodontes",
+    "name": "Cimetière des Mastodontes",
+    "level": 80,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Mantiscore se téléporte sur une case adjacente libre lorsqu'il subit des dégâts à distance.",
+      "Si aucune case adjacente n'est disponible, il perd temporairement 50% de résistances et gagne de la puissance.",
+      "La Léolhyène est une priorité majeure à cause de sa mécanique potentiellement létale."
+    ],
+    "globalMechanics": [
+      "Les monstres de Saharach jouent sur poisons, retrait et invisibilité.",
+      "Le boss peut attirer l'équipe de 3 cases avec Provocaspion.",
+      "Tombeau du Désert applique Enraciné."
+    ],
+    "boss": {
+      "key": "mantiscore",
+      "name": "Mantiscore",
+      "quickSummary": [
+        "Téléportation défensive à distance.",
+        "Attraction.",
+        "Enraciné.",
+        "Vol de PA."
+      ],
+      "mechanics": [
+        "Garde-bouclier fait téléporter Mantiscore sur une case adjacente libre quand il est frappé à distance.",
+        "S'il ne peut pas se téléporter, il perd 50% de résistances pendant 2 tours mais gagne de la puissance.",
+        "Provocaspion attire les ennemis proches de 3 cases."
+      ],
+      "importantSpells": [
+        {
+          "name": "Force Poigne",
+          "description": "Dégâts Eau au contact et vol de 2 PA."
+        },
+        {
+          "name": "Tombeau du Désert",
+          "description": "Dégâts Terre à distance et état Enraciné."
+        },
+        {
+          "name": "Provocaspion",
+          "description": "Attire les ennemis de 3 cases."
+        },
+        {
+          "name": "Darmoclès",
+          "description": "Effet de soutien/dégâts sur le combat."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Éliminer la Léolhyène avant le boss.",
+        "Exploiter le blocage des cases adjacentes pour faire tomber ses résistances.",
+        "Privilégier l'Eau."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Léolhyène",
+        "role": "Poison PA / menace létale",
+        "priority": "Très haute",
+        "mechanics": [
+          "Ses effets deviennent très dangereux après application ; à éliminer en priorité."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Boulépique",
+        "role": "Entrave PA/PM",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Fennex",
+        "role": "Mobilité / dégâts",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Scordion Bleu",
+        "role": "Distance / poison",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Mains propres",
+        "condition": "Achever les ennemis uniquement avec des dommages indirects.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Zombie",
+        "condition": "Utiliser exactement 1 PM à chaque tour.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : À portée de dard",
+        "condition": "Mantiscore ne doit recevoir aucun dommage à distance.",
+        "tips": [
+          "Nettoyer d'abord les monstres puis frapper Mantiscore uniquement en mêlée."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Léolhyène en premier.",
+      "Ne pas se faire encercler.",
+      "Gérer Garde-bouclier consciemment."
+    ]
+  },
+  {
+    "key": "terrier-wa-wabbit",
+    "name": "Terrier du Wa Wabbit",
+    "level": 80,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Wa Wobot attire, pousse, échange sa position et crée des Wobots Tamponneurs.",
+      "Il peut gagner 30% de résistances dans tous les éléments.",
+      "La poussée d'un Tamponneur contre le Wa Wobot réduit sa résistance poussée temporairement."
+    ],
+    "globalMechanics": [
+      "Le combat tourne autour du placement et des dommages de poussée.",
+      "Les Tamponneurs créés par Mékattwaction sont centraux dans la mécanique.",
+      "Éviter les murs réduit fortement les dégâts subis."
+    ],
+    "boss": {
+      "key": "wa-wobot",
+      "name": "Wa Wobot",
+      "quickSummary": [
+        "Attraction massive.",
+        "Poussée.",
+        "Échange avec invocations.",
+        "Résistances."
+      ],
+      "mechanics": [
+        "Mékattwaction attire une cible de 12 cases, la frappe et crée un Wobot Tamponneur à sa position d'origine.",
+        "Mékawapace donne 30% de résistances dans tous les éléments.",
+        "Substitution échange le Wa Wobot avec un Tamponneur.",
+        "Wouste pousse de 3 cases."
+      ],
+      "importantSpells": [
+        {
+          "name": "Mékattwaction",
+          "description": "Attire de 12 cases, inflige des dégâts et crée un Wobot Tamponneur."
+        },
+        {
+          "name": "Mékawapace",
+          "description": "Donne 30% de résistances dans tous les éléments."
+        },
+        {
+          "name": "Substitution",
+          "description": "Échange de position avec un Wobot Tamponneur."
+        },
+        {
+          "name": "Wouste",
+          "description": "Dégâts Feu et poussée de 3 cases."
+        },
+        {
+          "name": "Twansmutation",
+          "description": "Détruit une Cawotte alliée et la remplace par un Wobot Tamponneur."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Wobot Tamponneur",
+          "name": "Chaîne de poussée",
+          "trigger": "Le Tamponneur subit des dommages de poussée ou pousse une entité près d'un obstacle.",
+          "effect": "Déplacements en cascade et dommages de poussée importants.",
+          "avoid": "Éloigner les personnages des murs et contrôler l'orientation des poussées.",
+          "isOneShot": false
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Neutraliser les Tamponneurs dangereux.",
+        "Éviter les murs.",
+        "Profiter du retrait de résistance poussée du boss quand la mécanique se présente."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Tiwobot",
+        "role": "Placement / poussée",
+        "priority": "Haute",
+        "mechanics": [
+          "Peut déplacer et repousser, ce qui rend les murs dangereux."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Wabbit Céphale",
+        "role": "Soutien / placement",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Wabbit Fluo",
+        "role": "Distance / poussée",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Wobot Tamponneur",
+        "role": "Invocation / poussée",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Spécial : À fond les boulons",
+        "condition": "Les alliés ne doivent recevoir aucun dommage de poussée.",
+        "tips": [
+          "Éviter les murs et éliminer rapidement les sources de poussée."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Tiwobot en priorité.",
+      "Jouer loin des obstacles.",
+      "Gérer les Tamponneurs avant de chercher le gros tour de dégâts."
+    ]
+  },
+  {
+    "key": "antre-reine-nyee",
+    "name": "Antre de la Reine Nyée",
+    "level": 90,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "La Reine Nyée pond régulièrement des Œufs de Trégénaire.",
+      "Les Trégénaires changent de comportement quand la Reine subit des dégâts.",
+      "La combinaison Néfileuse → état Cocon → Arapex → Exécution constitue un véritable OS."
+    ],
+    "globalMechanics": [
+      "Une cible en Cocon perd 100 PA et 100 PM ; infliger un petit dégât direct à l'allié permet de retirer l'état.",
+      "Arapex peut OS une cible en Cocon avec Exécution jusqu'à 2 PO sans ligne de vue.",
+      "Les Œufs peuvent être frappés pour récupérer de la vie."
+    ],
+    "boss": {
+      "key": "reine-nyee",
+      "name": "Reine Nyée",
+      "quickSummary": [
+        "Œufs.",
+        "Invocation de Trégénaires.",
+        "Retrait PM.",
+        "Malus résistances."
+      ],
+      "mechanics": [
+        "Ponte d'Œuf invoque un Œuf de Trégénaire tous les 2 tours.",
+        "Cisaillage frappe au contact, repousse et retire 2 PM.",
+        "Mitraille de soie frappe à distance et retire 15% de résistances.",
+        "Quand la Reine est blessée, les Trégénaires passent en mode Dévoué et deviennent plus agressifs."
+      ],
+      "importantSpells": [
+        {
+          "name": "Ponte d'Œuf",
+          "description": "Invoque un Œuf de Trégénaire."
+        },
+        {
+          "name": "Cisaillage",
+          "description": "Dégâts Neutre, poussée de 1 case et retrait de 2 PM."
+        },
+        {
+          "name": "Mitraille de soie",
+          "description": "Dégâts à distance et -15% résistances."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Gérer les Œufs sans les laisser s'accumuler.",
+        "Contrôler les Trégénaires.",
+        "Ne pas déclencher trop tôt toutes les menaces si les autres monstres sont encore en vie."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Néfileuse",
+        "role": "Cocon / contrôle",
+        "priority": "Très haute",
+        "mechanics": [
+          "Prison de soie peut placer un allié en Cocon avec -100 PA/-100 PM."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Arapex",
+        "role": "OS conditionnel",
+        "priority": "Très haute",
+        "mechanics": [
+          "Exécution tue instantanément une cible en état Cocon."
+        ],
+        "importantSpells": [
+          {
+            "name": "Exécution",
+            "description": "Tue instantanément la cible si elle est dans l'état Cocon."
+          }
+        ],
+        "dangers": [
+          {
+            "sourceName": "Arapex",
+            "name": "Exécution sur Cocon",
+            "trigger": "Une cible est en état Cocon et l'Arapex arrive à 2 PO.",
+            "effect": "Mort instantanée.",
+            "avoid": "Retirer Cocon en infligeant un petit dégât direct à l'allié ou éloigner/entraver l'Arapex.",
+            "isOneShot": true
+          }
+        ]
+      },
+      {
+        "name": "Dardalaine",
+        "role": "Poison / anti-mêlée",
+        "priority": "Haute",
+        "mechanics": [
+          "Renvoie des dégâts aux entités à son contact lorsqu'elle subit des dégâts en mêlée."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Trégénaire",
+        "role": "Soin puis suicide offensif",
+        "priority": "Haute",
+        "mechanics": [
+          "Soigne la Reine en mode normal ; après des dégâts sur la Reine, passe Dévoué et cherche le contact."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Premier",
+        "condition": "Reine Nyée doit être achevée en premier.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Hardi",
+        "condition": "Les alliés doivent finir leur tour adjacents à un ennemi.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : On ne peut la Nyée",
+        "condition": "Chaque Œuf de Trégénaire doit être achevé avant le prochain tour de la Reine Nyée.",
+        "tips": [
+          "Prévoir une source de dégâts disponible immédiatement après chaque Ponte d'Œuf."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Néfileuse/Arapex sont prioritaires selon le placement.",
+      "Toujours avoir un moyen de casser Cocon.",
+      "Ne jamais laisser une Arapex approcher un allié en Cocon."
+    ]
+  },
+  {
+    "key": "bateau-du-chouque",
+    "name": "Bateau du Chouque",
+    "level": 90,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Le Chouque possède un passif d'exécution : à 30% de PV ou moins, une cible touchée par Malédiction Pirate est OS.",
+      "Coup de Sabre Maudit applique l'état Maudit pendant 2 tours ; les personnages Maudits sont automatiquement concernés par le passif.",
+      "Nakunbra possède lui aussi une attaque d'exécution dangereuse au contact."
+    ],
+    "globalMechanics": [
+      "Le Chouque peut échanger sa position avec un allié à très longue portée.",
+      "Rester au-dessus de 30% de PV est indispensable, et rester au-dessus de 50% évite aussi d'autres effets dangereux des pirates.",
+      "L'état Pesanteur peut empêcher certains échanges de place."
+    ],
+    "boss": {
+      "key": "le-chouque",
+      "name": "Le Chouque",
+      "quickSummary": [
+        "OS sous seuil de PV.",
+        "État Maudit.",
+        "Téléportation via alliés."
+      ],
+      "mechanics": [
+        "Malédiction Pirate cible le personnage non Maudit le plus proche et tous les personnages Maudits au début du tour du Chouque.",
+        "Au-dessus de 30% PV, les cibles subissent un vol de vie Eau ; à 30% ou moins, elles sont tuées instantanément et un pirate apparaît sur leur case.",
+        "Coup de Sabre Maudit applique Maudit ; si la cible est à 50% PV ou moins, il peut aussi faire apparaître un pirate.",
+        "Téléportation Spectrale échange le Chouque avec un allié et renforce cet allié."
+      ],
+      "importantSpells": [
+        {
+          "name": "Coup de Sabre Maudit",
+          "description": "Dégâts Neutre, -150 puissance, état Maudit pendant 2 tours ; effet supplémentaire si la cible est à 50% PV ou moins."
+        },
+        {
+          "name": "Téléportation Spectrale",
+          "description": "Échange de position avec un monstre allié et lui donne de la puissance."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Le Chouque",
+          "name": "Malédiction Pirate",
+          "trigger": "Au début du tour du Chouque, la cible concernée possède 30% de ses PV ou moins.",
+          "effect": "Mort instantanée puis apparition d'un pirate sur la case.",
+          "avoid": "Maintenir tous les personnages au-dessus de 30% PV, idéalement au-dessus de 50%, et garder le boss à distance.",
+          "isOneShot": true
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Éliminer les pirates avant le boss.",
+        "Soigner régulièrement.",
+        "Utiliser Pesanteur si possible pour empêcher les échanges dangereux."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Ivremor",
+        "role": "Glyphes / distance",
+        "priority": "Très haute",
+        "mechanics": [
+          "Pose des glyphes dangereux et peut perturber fortement les tours."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Nakunbra",
+        "role": "Mobilité / exécution",
+        "priority": "Très haute",
+        "mechanics": [
+          "Gagne des PM quand il subit des dégâts et possède Tranchage Mortel."
+        ],
+        "importantSpells": [
+          {
+            "name": "Tranchage Mortel",
+            "description": "Attaque de mêlée pouvant tuer directement sa cible sous sa condition."
+          }
+        ],
+        "dangers": [
+          {
+            "sourceName": "Nakunbra",
+            "name": "Tranchage Mortel",
+            "trigger": "Nakunbra atteint une cible vulnérable au contact.",
+            "effect": "Peut tuer instantanément la cible.",
+            "avoid": "L'éliminer rapidement et le tenir à distance.",
+            "isOneShot": true
+          }
+        ]
+      },
+      {
+        "name": "Boomba",
+        "role": "Bombes / invisibilité",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Canondorf",
+        "role": "Poussée / malus résistances",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Ricanif",
+        "role": "Rush / mêlée",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Spécial : Saute-pirate",
+        "condition": "Lorsqu'un allié du Chouque est déplacé/échangé par le boss, cet ennemi doit être achevé avant le délai imposé par le challenge.",
+        "tips": [
+          "Préparer les pirates à faible PV avant les échanges du boss."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Ivremor puis Nakunbra selon le placement.",
+      "Conserver les PV hauts.",
+      "Boss en dernier : seul, il devient beaucoup plus facile à contrôler."
+    ]
+  },
+  {
+    "key": "chapiteau-magik-riktus",
+    "name": "Chapiteau des Magik Riktus",
+    "level": 90,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Choudini est très mobile et possède une IA fuyarde.",
+      "Vinriktus échange les positions et retire des PM ; Détriktus repousse en zone.",
+      "Le combat est plus simple si les autres Magik Riktus sont éliminés avant le boss."
+    ],
+    "globalMechanics": [
+      "Les monstres du chapiteau possèdent des faiblesses élémentaires différentes.",
+      "Les pièges de Graboule rendent les déplacements imprudents dangereux.",
+      "Le succès spécial demande de répondre à tout déplacement ennemi par un déplacement de cet ennemi avant son prochain tour."
+    ],
+    "boss": {
+      "key": "choudini",
+      "name": "Choudini",
+      "quickSummary": [
+        "Fuite.",
+        "Échanges de positions.",
+        "Poussée.",
+        "Poison lié aux PM."
+      ],
+      "mechanics": [
+        "Reste assis réduit le tacle et applique un effet dangereux lié aux PM utilisés.",
+        "Vinriktus frappe Eau, retire des PM et échange la cible avec une autre entité alliée.",
+        "Détriktus frappe Air et repousse les entités autour de la cible."
+      ],
+      "importantSpells": [
+        {
+          "name": "Reste assis",
+          "description": "Réduit le tacle et applique des dégâts liés aux PM utilisés."
+        },
+        {
+          "name": "Vinriktus",
+          "description": "Dégâts Eau, retrait PM et échange de positions."
+        },
+        {
+          "name": "Détriktus",
+          "description": "Dégâts Air et poussée de 3 cases autour de la cible."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Nettoyer les monstres avant de courir après Choudini.",
+        "Conserver des sorts de placement.",
+        "Ne pas gaspiller ses PM sous Reste assis."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Graboule",
+        "role": "Pièges",
+        "priority": "Très haute",
+        "mechanics": [
+          "Pose plusieurs pièges ; faire attention avant chaque déplacement."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Bozoteur",
+        "role": "Échange / bouclier / retrait PO",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Pirolienne",
+        "role": "Distance / placement",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Roukouto",
+        "role": "Mêlée / dégâts",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Tivelo",
+        "role": "Mobilité / soutien",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Collant",
+        "condition": "Les alliés doivent finir leur tour adjacents à un autre allié.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Hardi",
+        "condition": "Les alliés doivent finir leur tour adjacents à un ennemi.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Chacun son tour de magie",
+        "condition": "Lorsqu'un ennemi déplace un allié, cet ennemi doit lui-même être déplacé par un allié avant le début de son prochain tour.",
+        "tips": [
+          "Après Détriktus, déplacer Choudini avant son prochain tour."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Graboule en priorité.",
+      "Nettoyer la troupe.",
+      "Garder Choudini pour la fin en combat normal."
+    ]
+  },
+  {
+    "key": "domaine-ancestral",
+    "name": "Domaine Ancestral",
+    "level": 90,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "L'Abraknyde Ancestral résiste fortement au Neutre, à la Terre et à l'Eau ; Feu et Air sont nettement meilleurs.",
+      "Branche Paralysante inflige un poison lié aux PA utilisés.",
+      "Depuis la mise à jour 3.6, la première Reconstitution peut arriver dès le tour 4."
+    ],
+    "globalMechanics": [
+      "Morsure Sylvestre retire désormais jusqu'à 2 PA et de la puissance.",
+      "Le boss invoque des Araknes Majeures.",
+      "Une mauvaise gestion du poison lié aux PA peut rendre un tour offensif très coûteux."
+    ],
+    "boss": {
+      "key": "abraknyde-ancestral",
+      "name": "Abraknyde Ancestral",
+      "quickSummary": [
+        "Poison PA.",
+        "Soin important.",
+        "Invocation.",
+        "Retrait PA/puissance."
+      ],
+      "mechanics": [
+        "Morsure Sylvestre frappe, retire jusqu'à 2 PA et retire de la puissance.",
+        "Branche Paralysante applique des dégâts en fonction des PA utilisés.",
+        "Reconstitution Abraknydienne soigne fortement ; première utilisation possible à partir du tour 4 depuis la 3.6.",
+        "Invocation d'Arakne Majeure ajoute un renfort."
+      ],
+      "importantSpells": [
+        {
+          "name": "Morsure Sylvestre",
+          "description": "Dégâts Neutre, retrait de PA et de puissance."
+        },
+        {
+          "name": "Branche Paralysante",
+          "description": "Poison dont les dégâts dépendent des PA utilisés."
+        },
+        {
+          "name": "Invocation d'Arakne Majeure",
+          "description": "Invoque une Arakne Majeure."
+        },
+        {
+          "name": "Reconstitution Abraknydienne",
+          "description": "Soin important du boss ou de ses alliés."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Abraknyde Ancestral",
+          "name": "Branche Paralysante",
+          "trigger": "Une cible sous l'effet du poison dépense beaucoup de PA.",
+          "effect": "Dégâts supplémentaires proportionnels à l'utilisation des PA.",
+          "avoid": "Limiter les PA utilisés pendant la durée du poison ou désenvoûter si possible.",
+          "isOneShot": false
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Frapper Feu/Air.",
+        "Éviter de dépenser inutilement des PA sous poison.",
+        "Empêcher les soins de prolonger le combat."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Abrakne Sombre",
+        "role": "Invocation / placement",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Abraknyde Sombre",
+        "role": "Distance / retrait PA",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Abraknyde Vénérable",
+        "role": "Soutien / tank",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Araknotron",
+        "role": "Boost / soutien",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Nomade",
+        "condition": "Utiliser tous ses PM à chaque tour.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Premier",
+        "condition": "Abraknyde Ancestral doit être achevé en premier.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Distance respectueuse",
+        "condition": "Lorsqu'un allié inflige des dommages, aucun ennemi ne doit se trouver à 3 PO ou moins de lui.",
+        "tips": [
+          "Prévoir une équipe à distance et repousser les monstres avant de frapper."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Éliminer les soutiens si vous ne faites pas Premier.",
+      "Utiliser Feu/Air.",
+      "Respecter le poison PA."
+    ]
+  },
+  {
+    "key": "antre-dragon-cochon",
+    "name": "Antre du Dragon Cochon",
+    "level": 100,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Étourderie Mortelle sanctionne très fortement l'utilisation des PA.",
+      "Croutage repousse de 6 cases : les murs sont dangereux.",
+      "Immobilisation retire massivement les PM à distance."
+    ],
+    "globalMechanics": [
+      "Le Dragon Cochon est relativement fragile mais peut punir une erreur de gestion des PA ou du placement.",
+      "Éviter son contact et les obstacles derrière les personnages."
+    ],
+    "boss": {
+      "key": "dragon-cochon",
+      "name": "Dragon Cochon",
+      "quickSummary": [
+        "Poison/dégâts liés aux PA utilisés.",
+        "Poussée massive.",
+        "Retrait PM."
+      ],
+      "mechanics": [
+        "Étourderie Mortelle inflige des dommages Neutre pour chaque PA utilisé sous son effet.",
+        "Croutage frappe au contact et repousse de 6 cases.",
+        "Immobilisation retire jusqu'à 10 PM.",
+        "Écrasement Handicapant retire des PA au contact."
+      ],
+      "importantSpells": [
+        {
+          "name": "Étourderie Mortelle",
+          "description": "Applique un effet infligeant de lourds dégâts Neutre en fonction des PA utilisés."
+        },
+        {
+          "name": "Croutage",
+          "description": "Dégâts Neutre et poussée de 6 cases."
+        },
+        {
+          "name": "Immobilisation",
+          "description": "Retrait massif de PM à distance."
+        },
+        {
+          "name": "Écrasement Handicapant",
+          "description": "Dégâts Terre et retrait de PA au contact."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Dragon Cochon",
+          "name": "Étourderie Mortelle",
+          "trigger": "Un personnage sous l'effet dépense ses PA.",
+          "effect": "Chaque PA utilisé augmente fortement les dégâts subis.",
+          "avoid": "Limiter drastiquement les PA utilisés pendant l'effet ou le retirer si possible.",
+          "isOneShot": false
+        },
+        {
+          "sourceName": "Dragon Cochon",
+          "name": "Croutage contre un mur",
+          "trigger": "Le boss pousse une cible alors qu'un obstacle se trouve derrière elle.",
+          "effect": "Importants dommages de poussée.",
+          "avoid": "Ne jamais rester dos à un mur au contact du boss.",
+          "isOneShot": false
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Le maintenir à distance.",
+        "Respecter Étourderie Mortelle.",
+        "Profiter de ses faibles résistances Eau/Air."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Don Dorgan",
+        "role": "Invocation / débuff",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Porsalu",
+        "role": "Mêlée / dégâts",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Cochon de Farle",
+        "role": "Renfort invoqué",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Porcos du labyrinthe",
+        "role": "Entrave / placement",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Spécial : Faut pas pousser les cochons dans la confiture d'orties",
+        "condition": "Les alliés ne doivent recevoir aucun dommage de poussée.",
+        "tips": [
+          "Éloigner tous les personnages des murs et tuer le boss avant qu'il puisse les coincer."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Dragon Cochon rapidement si le placement le permet.",
+      "Rester loin des murs.",
+      "Ne pas spammer les PA sous Étourderie Mortelle."
+    ]
+  },
+  {
+    "key": "arbre-de-moon",
+    "name": "Arbre de Moon",
+    "level": 100,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Moon commence avec 200% de résistances dans tous les éléments.",
+      "Darkli Moon invoque quatre totems associés aux glyphes Feu, Air, Eau et Terre.",
+      "Le Gloutovore possède Gobage : un véritable OS au corps-à-corps qui le soigne entièrement."
+    ],
+    "globalMechanics": [
+      "Pour déplacer un totem, il faut le frapper dans SON élément en étant aligné avec lui ; les sorts de poussée classiques ne suffisent pas.",
+      "Placer un totem sur son glyphe ouvre la vulnérabilité correspondante du Moon.",
+      "Un personnage qui termine son tour peut échanger de place avec le totem le plus proche, ce qui sert au placement final."
+    ],
+    "boss": {
+      "key": "moon",
+      "name": "Moon",
+      "quickSummary": [
+        "200% résistances.",
+        "Totems élémentaires.",
+        "Vulnérabilité par glyphe."
+      ],
+      "mechanics": [
+        "Totem rouge → Feu, vert → Air, bleu → Eau, jaune → Terre.",
+        "Frapper un totem dans son élément et en ligne l'attire vers le personnage sans utiliser une poussée classique.",
+        "Quand le bon totem est sur le bon glyphe, Moon devient attaquable dans l'élément correspondant."
+      ],
+      "importantSpells": [],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Nettoyer les monstres avant de gérer les totems.",
+        "Déplacer chaque totem avec son élément.",
+        "Burst Moon pendant la vulnérabilité correspondante."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Gloutovore",
+        "role": "OS mêlée / attraction",
+        "priority": "Très haute",
+        "mechanics": [
+          "Gobage tue instantanément au corps-à-corps, soigne le Gloutovore à 100% de ses PV max et lui donne 1 PM."
+        ],
+        "importantSpells": [
+          {
+            "name": "Gobage",
+            "description": "Tue instantanément la cible au contact, soigne entièrement le Gloutovore et lui donne 1 PM."
+          }
+        ],
+        "dangers": [
+          {
+            "sourceName": "Gloutovore",
+            "name": "Gobage",
+            "trigger": "Le Gloutovore arrive au corps-à-corps.",
+            "effect": "Mort instantanée de la cible ; le Gloutovore se soigne entièrement.",
+            "avoid": "Le garder à distance et l'éliminer en priorité.",
+            "isOneShot": true
+          }
+        ]
+      },
+      {
+        "name": "Domoizelle",
+        "role": "Invocation / poussée",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dostrogo",
+        "role": "Poussée",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Fourbasse",
+        "role": "Distance / retrait PA / glyphe",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Trukikol",
+        "role": "Placement / dégâts",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Versatile",
+        "condition": "Ne pas utiliser plus d'une fois la même action pendant un tour.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Statue",
+        "condition": "Finir chaque tour sur la même case que celle où le tour a commencé.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Animal totem",
+        "condition": "Les totems de Darkli Moon ne doivent jamais perdre de vie.",
+        "tips": [
+          "Les déplacer uniquement avec des attaques de leur élément en étant aligné."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Gloutovore en premier.",
+      "Nettoyer les autres monstres.",
+      "Faire la mécanique des totems sans précipitation."
+    ]
+  },
+  {
+    "key": "caverne-koulosse",
+    "name": "Caverne du Koulosse",
+    "level": 100,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "La mécanique principale est Souffle du Koulosse : il transforme un personnage en Boufcoul et lui retire 100 PA pendant 1 tour.",
+      "Si Souffle cible une invocation alliée, elle est tuée instantanément.",
+      "Le Koulosse ne peut utiliser Souffle qu'à partir du tour 2."
+    ],
+    "globalMechanics": [
+      "Le Koulosse ne fait presque pas de dégâts directs : il joue surtout sur attraction, transformation et invocations.",
+      "Ses portées sont modifiables, donc le retrait PO est extrêmement efficace.",
+      "Calumet de la Paix renforce et transforme ses propres invocations."
+    ],
+    "boss": {
+      "key": "koulosse",
+      "name": "Koulosse",
+      "quickSummary": [
+        "Transformation.",
+        "OS des invocations.",
+        "Attraction en ligne.",
+        "Invocation."
+      ],
+      "mechanics": [
+        "Souffle du Koulosse transforme un personnage en Boufcoul, lui retire 100 PA pour 1 tour et tue immédiatement une invocation ciblée.",
+        "Appel du Koulosse attire de 10 cases en ligne.",
+        "Invocation de Bouftou des cavernes est disponible à partir du tour 2.",
+        "Calumet de la Paix renforce fortement les invocations du boss."
+      ],
+      "importantSpells": [
+        {
+          "name": "Souffle du Koulosse",
+          "description": "Transforme un personnage en Boufcoul et lui retire 100 PA ; tue instantanément une invocation ciblée."
+        },
+        {
+          "name": "Appel du Koulosse",
+          "description": "Attire la cible de 10 cases en ligne."
+        },
+        {
+          "name": "Invocation de Bouftou des cavernes",
+          "description": "Invoque un Bouftou des Cavernes à partir du tour 2."
+        },
+        {
+          "name": "Calumet de la Paix",
+          "description": "Transforme/renforce une invocation du Koulosse."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Koulosse",
+          "name": "Souffle sur invocation",
+          "trigger": "Le Koulosse cible une invocation alliée avec Souffle.",
+          "effect": "L'invocation est tuée instantanément.",
+          "avoid": "Ne pas laisser les invocations alliées en ligne de vue/ligne du Koulosse à partir du tour 2.",
+          "isOneShot": true
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Retirer sa portée.",
+        "Casser ses lignes de vue.",
+        "Désenvoûter les transformations/boosts si possible."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Bouftou des Cavernes",
+        "role": "Entrave PA/PM / mêlée",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Boufcoul",
+        "role": "Boost / invisibilité / mêlée",
+        "priority": "Haute",
+        "mechanics": [
+          "Bise du Boufcoul peut rendre invisible et donner 5 PM à une cible alliée."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Zombie",
+        "condition": "Utiliser exactement 1 PM à chaque tour.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : À la cool",
+        "condition": "Aucun allié ne doit être transformé en Boufcoul.",
+        "tips": [
+          "Retirer la PO du Koulosse ou ne jamais finir aligné avec lui à partir du tour 2."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre le combat avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Tour 1 libre vis-à-vis de Souffle.",
+      "À partir du tour 2, ne jamais offrir de ligne au boss.",
+      "Éliminer ou contrôler ses invocations."
+    ]
+  },
+  {
+    "key": "fabrique-mallefisk",
+    "name": "Fabrique de Malléfisk",
+    "level": 100,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Donjon de dimension en une seule salle.",
+      "Malléfisk vole des PM, échange les positions et peut gagner un gros bouclier.",
+      "Le Boursoin est une cible prioritaire à cause de ses soins."
+    ],
+    "globalMechanics": [
+      "Le combat repose davantage sur la gestion des Koffrefors que sur une invulnérabilité du boss.",
+      "Ne pas avancer trop agressivement évite les échanges de position pénalisants.",
+      "Le succès Duo autorise 30 tours, contrairement à beaucoup de donjons classiques de cette tranche."
+    ],
+    "boss": {
+      "key": "mallefisk",
+      "name": "Malléfisk",
+      "quickSummary": [
+        "Vol PM.",
+        "Échange de positions.",
+        "Bouclier.",
+        "Dégâts liés à l'érosion."
+      ],
+      "mechanics": [
+        "Ka Dabor vole 2 PM et inflige des dégâts Air.",
+        "Chté Hu ! inflige des dégâts Eau, échange les positions et retire certains effets.",
+        "Nonoube Noharnak retire des effets au boss, lui donne 2 PM et un gros bouclier, avec des dégâts Feu basés sur son érosion."
+      ],
+      "importantSpells": [
+        {
+          "name": "Ka Dabor",
+          "description": "Dégâts Air et vol de 2 PM."
+        },
+        {
+          "name": "Chté Hu !",
+          "description": "Dégâts Eau, échange de positions et retrait d'effets."
+        },
+        {
+          "name": "Nonoube Noharnak",
+          "description": "Donne 2 PM et un important bouclier au boss ; composante Feu liée à l'érosion."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Boursoin en priorité.",
+        "Éviter de donner des échanges gratuits au boss.",
+        "Profiter de la faiblesse Air de Malléfisk."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Boursoin",
+        "role": "Soin",
+        "priority": "Très haute",
+        "mechanics": [
+          "Soigne en pourcentage des PV max ; priorité habituelle."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Mimikado",
+        "role": "Entrave PM/PO / poussée",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Kamasterisk",
+        "role": "Dégâts / placement",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Père Phorreur / Koffrefors",
+        "role": "Entrave / soutien",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Circulez !",
+        "condition": "Ne pas tenter de retirer de PM aux ennemis pendant toute la durée du combat.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Blitzkrieg",
+        "condition": "Lorsqu'un ennemi est attaqué, il doit être achevé avant le début de son tour.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 30 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Boursoin d'abord.",
+      "Focus une cible à la fois.",
+      "Boss après nettoyage de la salle."
+    ]
+  },
+  {
+    "key": "repaire-kharnozor",
+    "name": "Repaire du Kharnozor",
+    "level": 100,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Chaque Dragoss mort renforce les survivants via Don osseux.",
+      "Chaque mort de monstre renforce également Kharnozor en vitalité et en dommages finaux.",
+      "Frapper Kharnozor à courte distance déclenche une attraction puis une riposte Mort sûre pour chaque coup."
+    ],
+    "globalMechanics": [
+      "Les Dragoss élémentaires ont chacun une faiblesse : Ardoise Feu, Argile Terre, Calcaire Air, Charbon Eau.",
+      "Kharnozor est normalement Indéplaçable.",
+      "Éviter les sorts multi-lignes à courte portée contre le boss : chaque ligne peut provoquer une riposte."
+    ],
+    "boss": {
+      "key": "kharnozor",
+      "name": "Kharnozor",
+      "quickSummary": [
+        "Indéplaçable.",
+        "Riposte à courte portée.",
+        "Renforcement à chaque mort.",
+        "Grande mobilité ponctuelle."
+      ],
+      "mechanics": [
+        "Quand il est frappé depuis sa zone proche, l'attaquant est attiré au contact et le boss déclenche Mort sûre pour chaque coup reçu.",
+        "Emplafonnement lui permet de parcourir une très longue distance.",
+        "Cri déchirant repousse de 5 cases, retire 3 PA et applique Assourdi.",
+        "Mort sûre inflige des dégâts Terre et applique Insoignable et Pesanteur."
+      ],
+      "importantSpells": [
+        {
+          "name": "Emplafonnement",
+          "description": "Avance sur une très grande distance et inflige des dégâts Terre."
+        },
+        {
+          "name": "Cri déchirant",
+          "description": "Dégâts Air, poussée de 5 cases, retrait de 3 PA et état Assourdi."
+        },
+        {
+          "name": "Mort sûre",
+          "description": "Dégâts Terre, état Insoignable et Pesanteur."
+        }
+      ],
+      "dangers": [
+        {
+          "sourceName": "Kharnozor",
+          "name": "Riposte Mort sûre",
+          "trigger": "Un allié frappe le boss depuis une distance trop courte.",
+          "effect": "L'attaquant est attiré au contact et le boss riposte à chaque coup/ligne.",
+          "avoid": "Frapper à distance et éviter les sorts multi-lignes dans sa zone proche.",
+          "isOneShot": false
+        }
+      ],
+      "zones": [],
+      "strategy": [
+        "Éliminer les Dragoss les plus gênants en anticipant Don osseux.",
+        "Frapper Kharnozor à distance.",
+        "Éviter la proximité tant que le placement n'est pas maîtrisé."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Dragoss Protéiforme",
+        "role": "Multiélément / placement",
+        "priority": "Très haute",
+        "mechanics": [
+          "Dispose d'attaques du meilleur élément et d'effets variables."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoss Ardoise",
+        "role": "Eau / distance",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Faible Feu ; sa mort renforce la résistance Eau des survivants."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoss Argile",
+        "role": "Air / téléportation",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Faible Terre."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoss Calcaire",
+        "role": "Terre / poussée / vol PM",
+        "priority": "Haute",
+        "mechanics": [
+          "Faible Air."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dragoss Charbon",
+        "role": "Feu / mêlée",
+        "priority": "Moyenne",
+        "mechanics": [
+          "Faible Eau."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Dernier",
+        "condition": "Kharnozor doit être achevé en dernier.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Circulez !",
+        "condition": "Ne pas tenter de retirer de PM aux ennemis pendant toute la durée du combat.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Les yeux aussi gros que le ventre",
+        "condition": "À partir du tour 2, chaque ennemi doit avoir au moins un allié en ligne de vue au début de son tour.",
+        "tips": [
+          "Anticiper les obstacles avant chaque début de tour ennemi."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Priorité Protéiforme selon le placement.",
+      "Exploiter les faiblesses élémentaires.",
+      "Boss à distance uniquement."
+    ]
+  },
+  {
+    "key": "taniere-meulou",
+    "name": "Tanière du Meulou",
+    "level": 100,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Le Meulou possède 7 PM et frappe très fort au contact.",
+      "Depuis la mise à jour 3.6, la première attaque qu'il subit est réduite de 50% au lieu d'être totalement annulée.",
+      "Le bonus de puissance de Fureur ne dure plus que 3 tours."
+    ],
+    "globalMechanics": [
+      "Le retrait PM et le jeu à distance sont particulièrement efficaces.",
+      "Rage Reconstituante soigne le Meulou et augmente sa mobilité/tacle.",
+      "La meute contient plusieurs monstres capables de vulnérabiliser, d'éroder ou d'entraver."
+    ],
+    "boss": {
+      "key": "meulou",
+      "name": "Meulou",
+      "quickSummary": [
+        "Très mobile.",
+        "Vol de vie mêlée.",
+        "Soin.",
+        "Invocation.",
+        "Réduction de la première attaque."
+      ],
+      "mechanics": [
+        "La première attaque reçue est réduite de 50% depuis la 3.6.",
+        "Étripage est un puissant vol de vie Neutre au contact.",
+        "Rage Reconstituante soigne le boss et lui donne PM/tacle.",
+        "Invocation de Milimeulou ajoute un renfort."
+      ],
+      "importantSpells": [
+        {
+          "name": "Étripage",
+          "description": "Puissant vol de vie Neutre au contact."
+        },
+        {
+          "name": "Rage Reconstituante",
+          "description": "Soigne le Meulou et lui donne mobilité/tacle."
+        },
+        {
+          "name": "Invocation de Milimeulou",
+          "description": "Invoque un Milimeulou."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Retirer des PM.",
+        "Jouer à distance.",
+        "Éviter de gaspiller le plus gros sort sur la première attaque réduite."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Cocholou",
+        "role": "Vulnérabilisation / retrait PM",
+        "priority": "Très haute",
+        "mechanics": [
+          "Peut augmenter les dégâts subis par une cible et retirer des PM."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Muloubard",
+        "role": "Mêlée / érosion / tank",
+        "priority": "Haute",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Mulounoké",
+        "role": "Distance / entrave",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Mergranlou",
+        "role": "Dégâts / placement",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Spécial : Meulou y es-tu ?",
+        "condition": "Un même allié ne doit pas infliger plus de trois attaques à un même ennemi pendant son tour.",
+        "tips": [
+          "Compter les attaques, pas uniquement les sorts : un sort multi-lignes peut compter plusieurs attaques."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Cocholou puis Muloubard.",
+      "Contrôler la meute à distance.",
+      "Meulou en dernier en combat normal."
+    ]
+  },
+  {
+    "key": "theatre-dramak",
+    "name": "Théâtre de Dramak",
+    "level": 100,
+    "source": "Dofuthèque — MAJ août 2026 • DofusPourLesNoobs — guides actuels / MAJ 3.6",
+    "verifiedOn": "30/08/2026",
+    "quickSummary": [
+      "Le gardien final est le Maître des Pantins, malgré le nom de Dramak associé au donjon.",
+      "Le Maître des Pantins commence invulnérable et invoque cinq Marionnettes au premier tour.",
+      "Éliminer toutes les Marionnettes ouvre une fenêtre de vulnérabilité du boss."
+    ],
+    "globalMechanics": [
+      "Le boss n'a pas de déplacement classique et agit à très longue portée.",
+      "Les cinq Marionnettes ont des rôles/éléments différents.",
+      "Le succès spécial impose de les achever dans l'ordre exact où elles ont été invoquées."
+    ],
+    "boss": {
+      "key": "maitre-des-pantins",
+      "name": "Maître des Pantins",
+      "quickSummary": [
+        "Invulnérabilité.",
+        "5 Marionnettes.",
+        "Fenêtre de vulnérabilité.",
+        "Très longue portée."
+      ],
+      "mechanics": [
+        "Ensecret invoque cinq Marionnettes au tour 1.",
+        "Quand toutes les Marionnettes sont éliminées, le Maître devient vulnérable pour une courte fenêtre.",
+        "Il peut réinvoquer une nouvelle série si le combat se prolonge.",
+        "Bunraku applique une mécanique de marionnette sur un personnage qu'il faut gérer avant le tour suivant."
+      ],
+      "importantSpells": [
+        {
+          "name": "Ensecret",
+          "description": "Invoque les cinq Marionnettes du Maître."
+        },
+        {
+          "name": "Bunraku",
+          "description": "Applique une mécanique de marionnette à distance."
+        },
+        {
+          "name": "Tirer les ficelles",
+          "description": "Attaque multiélément à très longue portée avec vol de caractéristiques."
+        }
+      ],
+      "dangers": [],
+      "zones": [],
+      "strategy": [
+        "Noter l'ordre des Marionnettes si le succès spécial est visé.",
+        "Éliminer toute la série.",
+        "Burst le boss pendant sa vulnérabilité."
+      ]
+    },
+    "monsters": [
+      {
+        "name": "Marionnettes du Maître",
+        "role": "Mécanique de boss",
+        "priority": "Très haute",
+        "mechanics": [
+          "Cinq variantes élémentaires ; leur élimination rend le Maître vulnérable."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Dramak",
+        "role": "Monstre du donjon / invocation",
+        "priority": "Haute",
+        "mechanics": [
+          "Possède des mécaniques de pantins, de déplacement et de dégâts."
+        ],
+        "importantSpells": [],
+        "dangers": []
+      },
+      {
+        "name": "Monstres de Kartonpath",
+        "role": "Placement / contrôle",
+        "priority": "Moyenne",
+        "mechanics": [],
+        "importantSpells": [],
+        "dangers": []
+      }
+    ],
+    "dangers": [],
+    "zones": [],
+    "achievements": [
+      {
+        "name": "Statue",
+        "condition": "Finir chaque tour sur la même case que celle où le tour a commencé.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Mains propres",
+        "condition": "Achever les ennemis uniquement avec des dommages indirects.",
+        "tips": [],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Spectacle de marionnettes",
+        "condition": "Les Marionnettes doivent être achevées dans l'ordre dans lequel elles ont été invoquées.",
+        "tips": [
+          "Noter l'ordre dès le tour 1 et ne jamais achever la suivante trop tôt."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre le Maître des Pantins avec 2 personnages maximum dans la limite de tours.",
+        "tips": [],
+        "warnings": []
+      }
+    ],
+    "strategy": [
+      "Gérer les Marionnettes proprement.",
+      "Conserver les gros dégâts pour la fenêtre de vulnérabilité.",
+      "Ne pas perdre l'ordre si une nouvelle série apparaît."
     ]
   }
 ]
