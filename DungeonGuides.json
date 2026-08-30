@@ -3,13 +3,10 @@
     "key": "crypte-kardorim",
     "name": "Crypte de Kardorim",
     "level": 10,
-    "bossKey": "kardorim",
-    "bossName": "Kardorim",
     "source": "DofusPourLesNoobs — Crypte de Kardorim",
     "verifiedOn": "24/08/2026",
 
     "quickSummary": [
-  
       "Le combat est principalement orienté corps-à-corps.",
       "Kardorim et plusieurs monstres deviennent beaucoup moins dangereux si vous les gardez à distance.",
       "Le Kardorib invoqué par le boss peut repousser de 2 cases.",
@@ -22,6 +19,78 @@
       "Aucune mécanique globale complexe de donjon n'est documentée pour la Crypte de Kardorim.",
       "Le principal enjeu est de contrôler la distance et d'éviter que les différents Chafers renforcent le groupe ennemi."
     ],
+
+    "boss": {
+      "key": "kardorim",
+      "name": "Kardorim",
+
+      "quickSummary": [
+        "Boss principalement dangereux au corps-à-corps.",
+        "Invoque un Kardorib capable de repousser les joueurs.",
+        "Peut augmenter temporairement sa mobilité et celle de ses alliés."
+      ],
+
+      "mechanics": [
+        "Kardorim attaque principalement au corps-à-corps.",
+        "Il invoque un Kardorib dès le début du combat et peut renouveler cette invocation après son délai de relance.",
+        "À partir du tour 2, il peut augmenter de 1 PM pendant 1 tour sa mobilité et celle des alliés proches."
+      ],
+
+      "importantSpells": [
+        {
+          "name": "Appel de Kardorib",
+          "description": "Invoque un Kardorib. Le sort possède un délai de relance de 6 tours."
+        },
+        {
+          "name": "Casse-crâne",
+          "description": "Attaque de mêlée infligeant des dégâts neutres dans une zone en ligne de taille 2."
+        },
+        {
+          "name": "Craquement d'Os",
+          "description": "Donne 1 PM pendant 1 tour à Kardorim et aux alliés situés dans un cercle de taille 2 autour de lui."
+        },
+        {
+          "name": "Embrochement — Kardorib",
+          "description": "Le Kardorib attaque au corps-à-corps et repousse sa cible de 2 cases."
+        }
+      ],
+
+      "dangers": [
+        {
+          "sourceName": "Kardorib",
+          "name": "Repoussée du Kardorib",
+          "trigger": "Le Kardorib parvient au corps-à-corps d'un personnage.",
+          "effect": "La cible subit des dégâts et est repoussée de 2 cases.",
+          "avoid": "Garder de la distance avec l'invocation et anticiper les obstacles derrière le personnage.",
+          "isOneShot": false
+        }
+      ],
+
+      "zones": [
+        {
+          "sourceName": "Kardorim",
+          "name": "Casse-crâne",
+          "area": "Ligne de taille 2.",
+          "trigger": "Kardorim utilise son attaque de mêlée.",
+          "effect": "Dégâts neutres sur la zone touchée.",
+          "avoid": "Éviter de regrouper plusieurs personnages dans l'axe de son attaque."
+        },
+        {
+          "sourceName": "Kardorim",
+          "name": "Craquement d'Os",
+          "area": "Cercle de taille 2 autour de Kardorim.",
+          "trigger": "Disponible à partir du tour 2 puis selon son délai de relance.",
+          "effect": "Kardorim et les alliés présents dans la zone gagnent 1 PM pendant 1 tour.",
+          "avoid": "Anticiper l'augmentation de déplacement des ennemis."
+        }
+      ],
+
+      "strategy": [
+        "Jouer à distance permet d'éviter l'essentiel des attaques du boss.",
+        "Contrôler ou éliminer rapidement le Kardorib limite les risques liés à sa poussée.",
+        "Tenir compte du bonus de PM de Kardorim avant de terminer son tour trop près."
+      ]
+    },
 
     "monsters": [
       {
@@ -56,11 +125,11 @@
         "importantSpells": [
           {
             "name": "Flèche de Feu",
-            "description": "Inflige des dégâts Feu à distance et applique un poison de début de tour pendant 1 tour."
+            "description": "Inflige des dégâts Feu à distance et applique un poison."
           },
           {
             "name": "Flèches Critiques",
-            "description": "Augmente les chances de critique du Chafer Éclaireur pendant 2 tours."
+            "description": "Augmente les chances de critique du Chafer Éclaireur."
           }
         ],
         "dangers": [
@@ -86,7 +155,7 @@
         "importantSpells": [
           {
             "name": "Camouflage",
-            "description": "Rend le Chafer Furtif invisible pendant 1 tour. Disponible à partir du tour 2 avec un délai de relance."
+            "description": "Rend le Chafer Furtif invisible pendant 1 tour."
           },
           {
             "name": "Petit coup du Chafer",
@@ -120,11 +189,11 @@
         "importantSpells": [
           {
             "name": "Empalement",
-            "description": "Inflige des dégâts Air dans une zone en ligne de taille 3 à partir du corps-à-corps."
+            "description": "Inflige des dégâts Air dans une zone en ligne."
           },
           {
             "name": "Euphorie Malsaine",
-            "description": "Augmente les dommages de tous ses alliés sauf lui-même pendant 1 tour."
+            "description": "Augmente les dommages de ses alliés pendant 1 tour."
           }
         ],
         "dangers": [
@@ -150,7 +219,7 @@
         "importantSpells": [
           {
             "name": "Frénésie",
-            "description": "Augmente la puissance de tous ses alliés sauf lui-même pendant 2 tours."
+            "description": "Augmente la puissance de ses alliés pendant 2 tours."
           },
           {
             "name": "Petit coup du Chafer",
@@ -162,7 +231,7 @@
             "sourceName": "Sergent Chafer",
             "name": "Frénésie",
             "trigger": "Le Sergent Chafer utilise son sort de soutien.",
-            "effect": "Les autres ennemis gagnent de la puissance pendant 2 tours.",
+            "effect": "Les autres ennemis gagnent de la puissance.",
             "avoid": "L'isoler, le contrôler ou le tuer avant que son boost rende les autres monstres plus dangereux.",
             "isOneShot": false
           }
@@ -170,36 +239,9 @@
       }
     ],
 
-    "dangers": [
-      {
-        "sourceName": "Kardorib",
-        "name": "Repoussée",
-        "trigger": "Le Kardorib atteint un personnage au corps-à-corps.",
-        "effect": "La cible subit des dégâts et est repoussée de 2 cases. Des dommages de poussée supplémentaires sont possibles contre un obstacle.",
-        "avoid": "Éviter son corps-à-corps et ne pas terminer son tour dos à un obstacle lorsqu'il peut vous atteindre.",
-        "isOneShot": false
-      }
-    ],
+    "dangers": [],
 
     "zones": [
-      {
-        "sourceName": "Kardorim",
-        "name": "Casse-crâne",
-        "area": "Ligne de taille 2.",
-        "trigger": "Kardorim attaque au corps-à-corps.",
-        "effect": "Inflige des dégâts Neutre dans la zone.",
-        "avoid": "Éviter d'aligner plusieurs personnages dans son axe."
-      },
-
-      {
-        "sourceName": "Kardorim",
-        "name": "Craquement d'Os",
-        "area": "Cercle de taille 2 autour de Kardorim.",
-        "trigger": "À partir du tour 2 puis selon son délai de relance.",
-        "effect": "Kardorim et les alliés présents dans la zone gagnent 1 PM pendant 1 tour.",
-        "avoid": "Recalculer la portée de déplacement des ennemis avant de terminer son tour."
-      },
-
       {
         "sourceName": "Chafer Piquier",
         "name": "Empalement",
@@ -210,62 +252,53 @@
       }
     ],
 
-"achievements": [
-  {
-    "name": "Zombie",
-    "condition": "Utiliser exactement 1 PM à chaque tour de jeu.",
-    "tips": [
-      "Éviter de se faire tacler par Kardorim ou Kardorib.",
-      "Les sorts de déplacement ou de téléportation facilitent beaucoup le succès.",
-      "Éliminer Kardorim rapidement réduit fortement le risque d'être bloqué."
+    "achievements": [
+      {
+        "name": "Zombie",
+        "condition": "Utiliser exactement 1 PM à chaque tour de jeu.",
+        "tips": [
+          "Éviter de se faire tacler.",
+          "Les sorts de déplacement facilitent le succès."
+        ],
+        "warnings": [
+          "Ne pas oublier d'utiliser exactement 1 PM avant d'achever le dernier ennemi."
+        ]
+      },
+      {
+        "name": "Premier",
+        "condition": "Kardorim doit être achevé en premier.",
+        "tips": [
+          "Concentrer les dégâts sur Kardorim avant les autres monstres."
+        ],
+        "warnings": []
+      },
+      {
+        "name": "Spécial : Lâche mes côtes",
+        "condition": "Kardorim ne doit jamais finir son tour au corps-à-corps d'un combattant. Les Kardoribs ne doivent subir aucun dommage et ne doivent pas être poussés.",
+        "tips": [
+          "Maintenir Kardorim à distance.",
+          "Utiliser les déplacements sur Kardorim plutôt que sur le Kardorib."
+        ],
+        "warnings": [
+          "Ne jamais frapper ni pousser le Kardorib."
+        ]
+      },
+      {
+        "name": "Duo",
+        "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
+        "tips": [
+          "Éliminer Kardorim rapidement si la composition possède suffisamment de dégâts."
+        ],
+        "warnings": []
+      }
     ],
-    "warnings": [
-      "Ne pas oublier d'utiliser exactement 1 PM avant d'achever le dernier ennemi."
-    ]
-  },
-  {
-    "name": "Premier",
-    "condition": "Kardorim doit être achevé en premier.",
-    "tips": [
-      "Se placer suffisamment près du boss pour pouvoir le frapper dès le premier tour.",
-      "Concentrer les dégâts sur Kardorim avant de nettoyer les autres monstres."
-    ],
-    "warnings": []
-  },
-  {
-    "name": "Spécial : Lâche mes côtes",
-    "condition": "Kardorim ne doit jamais finir son tour au corps-à-corps d'un combattant. Les Kardoribs ne doivent subir aucun dommage et ne doivent pas être poussés.",
-    "tips": [
-      "Maintenir Kardorim à distance en permanence.",
-      "L'éliminer rapidement limite fortement les risques.",
-      "Utiliser les sorts de déplacement sur Kardorim plutôt que sur le Kardorib."
-    ],
-    "warnings": [
-      "Ne jamais frapper ni pousser le Kardorib.",
-      "Attention au bonus de PM de Kardorim à partir du tour 2."
-    ]
-  },
-  {
-    "name": "Duo",
-    "condition": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours.",
-    "tips": [
-      "Si les dégâts sont suffisants, éliminer Kardorim rapidement en premier.",
-      "Sinon, commencer à distance et réduire d'abord le nombre de monstres.",
-      "Adapter l'ordre de focus à la composition du duo."
-    ],
-    "warnings": [
-      "Le nombre limité de personnages rend le placement et le contrôle du Kardorib plus importants."
-    ]
-  }
-],
 
     "strategy": [
-      "Le Kardorim est généralement la priorité principale et peut être éliminé rapidement.",
-      "Éliminer ou maintenir à distance le Kardorib s'il devient gênant.",
+      "Éliminer ou contrôler Kardorim rapidement.",
+      "Maintenir le Kardorib à distance.",
       "Éviter les alignements face au Chafer Piquier.",
-      "Surveiller le Chafer Furtif à partir du tour 2 à cause de son invisibilité.",
-      "Le Sergent Chafer et le Chafer Piquier peuvent renforcer le reste du groupe ennemi.",
-      "Utiliser les obstacles pour limiter les attaques à distance du Chafer Éclaireur."
+      "Surveiller le Chafer Furtif à partir du tour 2.",
+      "Empêcher le Sergent Chafer et le Chafer Piquier de renforcer trop longtemps leurs alliés."
     ]
   }
 ]
